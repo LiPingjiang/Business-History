@@ -1,4 +1,4 @@
-# 佳能（Canon）
+# Snowflake（Snowflake）
 
 > 《企业史》企业黄页
 
@@ -6,24 +6,24 @@
 
 | 项目 | 内容 |
 |------|------|
-| 企业名称 | 佳能 |
-| 外文名称 | Canon |
-| 所属国家 | 日本 |
-| 行业 | 影像设备 |
-| 成立时间 | 1937 |
-| 总部 | 日本东京 |
-| 入华时间 | 1990s |
+| 企业名称 | Snowflake |
+| 外文名称 | Snowflake |
+| 所属国家 | 美国 |
+| 行业 | 云数据平台 |
+| 成立时间 | 2012 |
+| 总部 | 美国博兹曼 |
+| 入华时间 | 2020s |
 | 在京机构 | 北京办公室 |
 | 雇员规模 | 未披露 |
 | 中国营收 | 未披露 |
 
 ## 企业简介
 
-全球最大的相机和办公设备制造商之一。
+全球领先的云原生数据平台公司。
 
 ## 招聘渠道
 
-- 官方招聘：[佳能官方招聘](https://global.canon/careers/)
+- 官方招聘：[Snowflake官方招聘](https://careers.snowflake.com/)
 - 第三方平台：[BOSS直聘](https://www.zhipin.com/) ｜ [猎聘](https://www.liepin.com/) ｜ [智联招聘](https://www.zhaopin.com/) ｜ [LinkedIn](https://www.linkedin.com/)
 
 ---
