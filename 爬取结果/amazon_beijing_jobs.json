@@ -1,0 +1,65 @@
+[
+  {
+    "company": "Amazon",
+    "title": "Demand Generation Rep",
+    "location": "Beijing, China",
+    "category": "Sales, Advertising, & Account Management",
+    "url": "https://amazon.jobs/en/jobs/6eb96bb5-933d-4e27-bd8f-be9d0be6baf3/",
+    "is_tech": true,
+    "posted_date": "June  1, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "Demand Generation Rep",
+    "location": "Beijing, China",
+    "category": "Sales, Advertising, & Account Management",
+    "url": "https://amazon.jobs/en/jobs/39b0c213-3a38-4739-99c2-d71fe7ea4ac2/",
+    "is_tech": true,
+    "posted_date": "June 26, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "AI Agent Engineer, ARTS",
+    "location": "Beijing, China",
+    "category": "Business Intelligence",
+    "url": "https://amazon.jobs/en/jobs/f822f4a8-ded3-4254-9bcd-f2c37935e52e/",
+    "is_tech": true,
+    "posted_date": "June 17, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "Brand Specialist",
+    "location": "Beijing, China",
+    "category": "Sales, Advertising, & Account Management",
+    "url": "https://amazon.jobs/en/jobs/6acebced-cd87-4b06-8525-89976a7486f6/",
+    "is_tech": false,
+    "posted_date": "May 19, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "Brand Specialist",
+    "location": "Beijing, China",
+    "category": "Sales, Advertising, & Account Management",
+    "url": "https://amazon.jobs/en/jobs/5798ab26-374e-4c67-a8bd-f7f3a57deeae/",
+    "is_tech": false,
+    "posted_date": "May 19, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "Program Manager, ROW trans Exe",
+    "location": "Beijing, China",
+    "category": "Project/Program/Product Management--Non-Tech",
+    "url": "https://amazon.jobs/en/jobs/c14ff431-1afd-4677-9473-2b0c746d94ac/",
+    "is_tech": false,
+    "posted_date": "June 24, 2026"
+  },
+  {
+    "company": "Amazon",
+    "title": "Senior Software Dev Engineer, Kindle Device",
+    "location": "Beijing, China",
+    "category": "Software Development",
+    "url": "https://amazon.jobs/en/jobs/ca71306c-8188-4850-b81f-d73aaff979ed/",
+    "is_tech": true,
+    "posted_date": "June 18, 2026"
+  }
+]

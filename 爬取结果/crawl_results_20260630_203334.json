@@ -1,0 +1,943 @@
+{
+  "crawl_time": "2026-06-30T20:33:34.933477",
+  "results": {
+    "amazon": [
+      {
+        "company": "Amazon",
+        "title": "Demand Generation Rep",
+        "location": "Beijing, China",
+        "category": "Sales, Advertising, & Account Management",
+        "url": "https://amazon.jobs/en/jobs/6eb96bb5-933d-4e27-bd8f-be9d0be6baf3/",
+        "is_tech": true,
+        "posted_date": "June  1, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "Demand Generation Rep",
+        "location": "Beijing, China",
+        "category": "Sales, Advertising, & Account Management",
+        "url": "https://amazon.jobs/en/jobs/39b0c213-3a38-4739-99c2-d71fe7ea4ac2/",
+        "is_tech": true,
+        "posted_date": "June 26, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "AI Agent Engineer, ARTS",
+        "location": "Beijing, China",
+        "category": "Business Intelligence",
+        "url": "https://amazon.jobs/en/jobs/f822f4a8-ded3-4254-9bcd-f2c37935e52e/",
+        "is_tech": true,
+        "posted_date": "June 17, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "Brand Specialist",
+        "location": "Beijing, China",
+        "category": "Sales, Advertising, & Account Management",
+        "url": "https://amazon.jobs/en/jobs/6acebced-cd87-4b06-8525-89976a7486f6/",
+        "is_tech": false,
+        "posted_date": "May 19, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "Brand Specialist",
+        "location": "Beijing, China",
+        "category": "Sales, Advertising, & Account Management",
+        "url": "https://amazon.jobs/en/jobs/5798ab26-374e-4c67-a8bd-f7f3a57deeae/",
+        "is_tech": false,
+        "posted_date": "May 19, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "Program Manager, ROW trans Exe",
+        "location": "Beijing, China",
+        "category": "Project/Program/Product Management--Non-Tech",
+        "url": "https://amazon.jobs/en/jobs/c14ff431-1afd-4677-9473-2b0c746d94ac/",
+        "is_tech": false,
+        "posted_date": "June 24, 2026"
+      },
+      {
+        "company": "Amazon",
+        "title": "Senior Software Dev Engineer, Kindle Device",
+        "location": "Beijing, China",
+        "category": "Software Development",
+        "url": "https://amazon.jobs/en/jobs/ca71306c-8188-4850-b81f-d73aaff979ed/",
+        "is_tech": true,
+        "posted_date": "June 18, 2026"
+      }
+    ],
+    "nvidia": [
+      {
+        "company": "NVIDIA",
+        "title": "Senior MLOps Manager",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-MLOps-Manager_JR2019599",
+        "is_tech": false,
+        "posted_on": "Posted Yesterday"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Deep Learning Performance Software Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Deep-Learning-Performance-Software-Engineer_JR2020134",
+        "is_tech": true,
+        "posted_on": "Posted Yesterday"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Applied Research Intern, Robotics - 2026",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Applied-Research-Intern--Robotics---2026_JR2020124",
+        "is_tech": true,
+        "posted_on": "Posted 4 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Technical Program Manager - Automotive Vehicles",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Technical-Program-Manager---Automotive-Vehicles_JR2016307",
+        "is_tech": false,
+        "posted_on": "Posted 4 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "ASIC Physical Design Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/ASIC-Physical-Design-Engineer_JR2018952",
+        "is_tech": true,
+        "posted_on": "Posted 5 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Autonomous Driving Software Engineer, L4 Planning",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Senior-Autonomous-Driving-System-Engineer--L4_JR2014562",
+        "is_tech": true,
+        "posted_on": "Posted 5 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Robotics Software Intern, Deployment and Humanoids - 2026",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Robotics-Software-Intern--Deployment-and-Humanoids---2026_JR2019641",
+        "is_tech": true,
+        "posted_on": "Posted 5 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "PDM Business Analyst",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-PDM-Business-Analyst_JR2018844",
+        "is_tech": false,
+        "posted_on": "Posted 5 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior AI Training Performance Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-AI-Training-Performance-Engineer_JR2019975",
+        "is_tech": true,
+        "posted_on": "Posted 6 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Solution Architect, Jetson Platform Edge Computing",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Solution-Architect--Jetson-Platform-Edge-Computing_JR2019692",
+        "is_tech": true,
+        "posted_on": "Posted 6 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Software Engineer, AI and DL Kernel Libraries",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Software-Engineer--AI-and-DL-Kernel-Libraries_JR2019913",
+        "is_tech": true,
+        "posted_on": "Posted 6 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "ASIC Verification Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/ASIC-Verification-Engineer_JR2019438",
+        "is_tech": true,
+        "posted_on": "Posted 8 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Custom SOC IP Verification Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Custom-SOC-IP-Verification-Engineer_JR2019424",
+        "is_tech": true,
+        "posted_on": "Posted 8 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Graphics Tools Software Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Graphics-Tools-Software-Engineer_JR2017973",
+        "is_tech": true,
+        "posted_on": "Posted 13 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "System Design Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/System-Design-Engineer_JR2002245",
+        "is_tech": true,
+        "posted_on": "Posted 15 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Supply Base Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-Supply-Base-Engineer_JR2019601",
+        "is_tech": true,
+        "posted_on": "Posted 18 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "AI Computing Software Development Engineer, TensorRT",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/AI-Computing-Software-Development-Engineer--TensorRT_JR2019701",
+        "is_tech": true,
+        "posted_on": "Posted 19 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Solutions Architect -  Physical AI TPM",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Solutions-Architect---Top-AI-Labs_JR2015715",
+        "is_tech": true,
+        "posted_on": "Posted 19 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Deep Learning Performance Architect",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Deep-Learning-Performance-Architect_JR2019478",
+        "is_tech": true,
+        "posted_on": "Posted 20 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Security and Safety Circuit Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Security-and-Safety-Circuit-Engineer_JR2019428",
+        "is_tech": true,
+        "posted_on": "Posted 20 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior System Software Engineer - GPU Performance Profiling Tools",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Software-Engineer---GPU-Performance-Profiling-Tools_JR2018775",
+        "is_tech": true,
+        "posted_on": "Posted 22 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Computer Vision Hardware Architect",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Computer-Vision-and-Deep-Learning-Hardware-Architect_JR2015967-1",
+        "is_tech": true,
+        "posted_on": "Posted 24 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "System Performance Analysis Engineer, Silicon Co-Design Group",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/System-Performance-Analysis-Engineer--Silicon-Co-Design-Group_JR2019210",
+        "is_tech": true,
+        "posted_on": "Posted 25 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Enterprise Customer Technical Program Manager - GPU and Networking",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Enterprise-Customer-Technical-Program-Manager---GPU-and-Networking_JR2018285",
+        "is_tech": false,
+        "posted_on": "Posted 25 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Machine Learning Intern, Humanoid Robotics - 2026",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Machine-Learning-Intern--Humanoid-Robotics---2026_JR2018845",
+        "is_tech": true,
+        "posted_on": "Posted 26 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior CUDA Test Development Software Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-CUDA-Test-Development-Software-Engineer--SDET_JR2019136",
+        "is_tech": true,
+        "posted_on": "Posted 27 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Power and Performance Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Power-and-Performance-Engineer_JR2019124",
+        "is_tech": true,
+        "posted_on": "Posted 28 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior System Software Engineer, Robotics",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Software-Engineer--Robotics_JR2019036",
+        "is_tech": true,
+        "posted_on": "Posted 28 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Arch Intern, CPU - 2026",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Arch-Intern--CPU---2026_JR2019197",
+        "is_tech": false,
+        "posted_on": "Posted 28 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "NPI PCB Sourcing Program Manager",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-NPI-PCB-Project-Manager_JR2013323",
+        "is_tech": false,
+        "posted_on": "Posted 28 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Product Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-Product-Engineer_JR2018278",
+        "is_tech": true,
+        "posted_on": "Posted 29 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "HR Business Partner",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/HR-Business-Partner_JR1970791",
+        "is_tech": false,
+        "posted_on": "Posted 29 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Deep Learning Performance Architect",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Deep-Learning-Performance-Architect_JR2018826-1",
+        "is_tech": true,
+        "posted_on": "Posted 29 Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Silicon Validation Methodology Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Validation-Methodology-Engineer_JR2014734",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Power Integrity Co-Design Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Power-Integrity-Co-Design-Engineer_JR2018670",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "AI Computing Development Engineer, TensorRT and TensorRT-LLM",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/AI-Computing-Development-Engineer--TensorRT-and-TensorRT-LLM_JR2018666",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "ASIC Design Engineer, Clocks",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/ASIC-Design-Engineer--Clocks_JR2018444",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Applied AI Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-AI-Infrastructure-Software-Engineer_JR2011320",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Software Engineer - Networking",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Senior-Software-Engineer---RDMA-and-Doca_JR2015006",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Operation Account Manager",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Operation-Account-Manager_JR2018279",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Applied AI Engineer - Silicon Co-Design Group",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Applied-AI-Engineer---Silicon-Co-Design-Group_JR2017301",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior SOC Design Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-SOC-Design-Engineer_JR2018606",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Software Engineering Intern, Robot Learning Platform - 2026",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Software-Engineering-Intern--Robot-Learning-Platform---2026_JR2018629",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior System Software Engineer - Autonomous Vehicles",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Software-Engineer---Autonomous-Vehicles_JR2018295",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Technical Support Engineer",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Senior-Technical-Support-Engineer_JR2018515",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Manager, Formal Verification",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Manager--Formal-Verification_JR2018342-1",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Manufacturing Test Engineer - ICT",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Manufacturing-Test-Engineer---ICT_JR2017798",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Manufacturing Test Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Manufacturing-Test-Engineer_JR2017799",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Product Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-Product-Engineer_JR2018203",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior System Software Engineer - AI Performance and Efficiency Tools",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Software-Engineer---AI-Performance-and-Efficiency-Tools_JR1996042",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "AI and Creator Developer Marketing Manager, China",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/AI-and-Creator-Developer-Marketing-Manager--China_JR2017756",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior CUDA Test Development Software Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-CUDA-Test-Development-Software-Engineer--SDET_JR2018122",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Applied AI Engineer, Product Convergence and Closure",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Applied-AI-Engineer--Product-Convergence-and-Closure_JR2018202",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Infrastructure Automation Engineer - Silicon Co-Design Group",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Infrastructure-Automation-Engineer---Silicon-Co-Design-Group_JR2018196",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Software Development Tech Lead – AI Developer Experiences",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Software-Development-Tech-Lead---AI-Developer-Experiences_JR2017783",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Platform AI Engineer - Silicon Co-Design Group",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Platform-AI-Engineer---Silicon-Co-Design-Group_JR2016323",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior CUDA Test Development Software Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-CUDA-Test-Development-Software-Engineer--SDET_JR2014069",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Technical Program Manager, SCG Efficiency",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Technical-Program-Manager--SCG-Efficiency_JR2017692",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior DFX Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-DFX-Engineer_JR2017690",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Signal and Power Integrity Engineer",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Signal-and-Power-Integrity-Engineer_JR2017700",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "ASIC Physical Design Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/ASIC-Physical-Design-Engineer_JR2017391",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior NPI Materials Planner",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-NPI-Materials-Planner_JR2017303",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Systems Infrastructure Software Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Systems-Infrastructure-Software-Engineer_JR2016884",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Technical Account Manager",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Technical-Account-Manager_JR2017137",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Technical Program Manager - Robotics",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Technical-Program-Manager---Robotics_JR2017615",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior GPU Communications Libraries Test Development Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-GPU-Communications-Libraries-Test-Development-Engineer--SDET_JR2017057",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior System Software Engineer, Robotics",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-System-Software-Engineer--Robotics_JR2017337",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Supplier Quality Engineer",
+        "location": "China, Remote",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Remote/Senior-Supplier-Quality-Engineer_JR2017040",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Supplier Quality Engineer - PCB",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Senior-Supplier-Quality-Engineer---PCB_JR2017058",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Manager, Software Engineering - NCCL",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Manager--Software-Engineering---NCCL_JR2016650",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "GPU Profiling Software Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/GPU-Profiling-Software-Engineer_JR2016747",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior DGX Cloud Test Development Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-DGX-Cloud-Test-Development-Engineer--SDET_JR2017224",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Compute System Architect",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Compute-System-Architect_JR2016177",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Technical Program Manager, Deep Learning Software",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Technical-Program-Manager--Deep-Learning-Software_JR2016653",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Machine Learning Engineer - Humanoid Robotics",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Machine-Learning-Engineer---Humanoid-Robotics_JR2016809",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "LLM Reinforcement Learning Framework Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/LLM-Reinforcement-Learning-Framework-Engineer_JR2016313-1",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "ASIC Physical Design Methodology Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/ASIC-Physical-Design-Methodology-Engineer_JR2016811",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "System Software Engineer, GPU Development Tools",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/System-Software-Engineer--GPU-Development-Tools_JR2016503-1",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "AI Computing Development Engineer, TensorRT-LLM",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/AI-Computing-Development-Engineer--TensorRT-LLM_JR2016158",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Software Engineer, NCCL",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Software-Engineer--NCCL_JR2016055",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Supplier Operations Program Manager",
+        "location": "China, Shenzhen",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shenzhen/Supplier-Operations-Program-Manager_JR2014803",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Deep Learning Solution Architect",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Deep-Learning-Solution-Architect_JR2015718",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Solutions Architect - KV Cache and AI Storage",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Senior-Solutions-Architect---KV-Cache-and-AI-Storage_JR2015719",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Senior Deep Learning Test Development Engineer, SDET",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Senior-Deep-Learning-Test-Development-Engineer--SDET_JR2015515",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Robotics Business Development Manager - Humanoid",
+        "location": "China, Beijing",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Beijing/Robotics-Business-Development-Manager---Humanoid_JR2015525",
+        "is_tech": false,
+        "posted_on": "Posted 30+ Days Ago"
+      },
+      {
+        "company": "NVIDIA",
+        "title": "Power Analysis and Optimization Engineer",
+        "location": "China, Shanghai",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/job/China-Shanghai/Power-Analysis-and-Optimization-Engineer_JR2015009",
+        "is_tech": true,
+        "posted_on": "Posted 30+ Days Ago"
+      }
+    ],
+    "microsoft": [
+      {
+        "company": "Microsoft",
+        "title": "Sales Strategy Enablement Lead",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556875181?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "11 minutes ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Consultant",
+        "location": "India, Telangana, Hyderabad + 2 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556657635?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "32 minutes ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Software Engineer",
+        "location": "United Kingdom, Berkshire, Reading",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556912994?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "37 minutes ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Software Engineer",
+        "location": "India, Karnataka, Bangalore",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556862715?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "an hour ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Engineering Manager",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914044?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "an hour ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Cambridge Residency Programme: AI Researcher in Interactive Generative AI systems",
+        "location": "United Kingdom, Cambridgeshire, Cambridge",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556915128?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "an hour ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Digital Solution Engineer - D365 CE",
+        "location": "China, Beijing, Beijing + 3 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556912724?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": true,
+        "posted": "an hour ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Commercial Executive (Education)",
+        "location": "Netherlands, Multiple Locations, Multiple Locations + 9 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914637?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "an hour ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Client Director - German Market - Microsoft Advertising",
+        "location": "Germany, Multiple Locations, Multiple Locations",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556917690?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "2 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Consultant - (Dotnet - Full stack development + AI)",
+        "location": "India, Telangana, Hyderabad + 2 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556657610?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "2 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Commercial GTM Performance Lead",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556912999?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "4 days ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Director - Global SMB Strategy & Growth",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556913120?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "18 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Sr. Business Strategy Manager - Security or Cloud & AI Platforms",
+        "location": "United States, Washington, Redmond + 1 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914998?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "14 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Director, Global SMB Strategy & Growth- AI Business Solutions",
+        "location": "United States, Washington, Redmond + 1 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914896?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "8 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Director, Global SMB Strategy & Growth- Cloud & AI Platforms",
+        "location": "United States, Washington, Redmond + 1 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914897?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "8 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Director, Enterprise Partner Business Strategy - ABS or CAIP",
+        "location": "United States, Washington, Redmond + 1 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914101?lc=Beijing&kw=software",
+        "is_tech": true,
+        "is_china": false,
+        "posted": "4 days ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Director, Global SMB Strategy & Growth- Security",
+        "location": "United States, Washington, Redmond + 1 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556914898?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "8 hours ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Business Strategy Manager",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556872943?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "12 days ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Corporate Strategy & Development Manager",
+        "location": "United States, Washington, Redmond",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556862453?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "2 months ago"
+      },
+      {
+        "company": "Microsoft",
+        "title": "Senior Sales Excellence Manager",
+        "location": "United States, Multiple Locations, Multiple Locations + 3 more",
+        "url": "https://apply.careers.microsoft.com/careers/job/1970393556913079?lc=Beijing&kw=software",
+        "is_tech": false,
+        "is_china": false,
+        "posted": "4 days ago"
+      }
+    ]
+  },
+  "found_workday_sites": []
+}
