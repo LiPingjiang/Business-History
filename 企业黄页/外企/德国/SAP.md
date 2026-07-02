@@ -32,11 +32,11 @@
 > 信息来源于企业官网、BOSS直聘、猎聘、LinkedIn等平台，采集时间2026年6月。
 > 岗位信息动态变化，请以企业官方招聘页面为准。
 
-| 岗位名称 | 来源链接 |
-|----------|----------|
-| Engineering Jobs in Beijing | [查看](https://jobs.sap.com/go/Engineering-Jobs-in-Beijing/867601/) |
-| Developer Jobs in China | [查看](https://jobs.sap.com/go/Developer-Jobs-in-China/896701/) |
-| Senior ABAP Developer | [查看](https://www.zhaopin.com/jobdetail/CCL1432027560J40735762211.htm) |
+| 岗位名称 | 招聘类型 | 来源链接 |
+|----------|----------|----------|
+| Engineering Jobs in Beijing | 社招+校招 | [查看](https://jobs.sap.com/go/Engineering-Jobs-in-Beijing/867601/) |
+| Developer Jobs in China | 社招+校招 | [查看](https://jobs.sap.com/go/Developer-Jobs-in-China/896701/) |
+| Senior ABAP Developer | 社招 | [查看](https://www.zhaopin.com/jobdetail/CCL1432027560J40735762211.htm) |
 
 ---
 
