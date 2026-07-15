@@ -26,6 +26,14 @@
 - 官方招聘：[Airbnb官方招聘](https://careers.airbnb.com/)
 - 第三方平台：[BOSS直聘](https://www.zhipin.com/) ｜ [猎聘](https://www.liepin.com/) ｜ [智联招聘](https://www.zhaopin.com/) ｜ [LinkedIn](https://www.linkedin.com/)
 
+## 北京数据研发岗位核查（2026年7月）
+
+| 核查项 | 结果 |
+|--------|------|
+| 招聘页链接 | [https://careers.airbnb.com/positions/](https://careers.airbnb.com/positions/) |
+| 核查结果 | 官网可访问，共209个全球在招职位，按地点筛选发现北京/中国相关岗位数个，其中包含技术研发类岗位 |
+| 发现岗位 | AI Engineer, Community Support Engineering（Engineering类，China-Remote） |
+
 ---
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*

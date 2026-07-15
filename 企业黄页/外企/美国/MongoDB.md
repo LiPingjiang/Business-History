@@ -26,6 +26,13 @@
 - 官方招聘：[MongoDB官方招聘](https://www.mongodb.com/careers)
 - 第三方平台：[BOSS直聘](https://www.zhipin.com/) ｜ [猎聘](https://www.liepin.com/) ｜ [智联招聘](https://www.zhaopin.com/) ｜ [LinkedIn](https://www.linkedin.com/)
 
+## 北京数据研发岗位核查（2026年7月）
+
+| 核查项 | 结果 |
+|--------|------|
+| 招聘页链接 | [https://www.mongodb.com/careers/search?location=Beijing](https://www.mongodb.com/careers/search) |
+| 核查结果 | 官网可访问，按"Beijing"地点筛选后共 3 个在招岗位，但均为销售类岗位（Enterprise Account Executive、Enterprise Account Manager、Sales Development Representative），**无数据研发相关岗位** |
+
 ---
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*

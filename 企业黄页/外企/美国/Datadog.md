@@ -26,6 +26,13 @@
 - 官方招聘：[Datadog官方招聘](https://careers.datadoghq.com/)
 - 第三方平台：[BOSS直聘](https://www.zhipin.com/) ｜ [猎聘](https://www.liepin.com/) ｜ [智联招聘](https://www.zhaopin.com/) ｜ [LinkedIn](https://www.linkedin.com/)
 
+## 北京数据研发岗位核查（2026年7月）
+
+| 核查项 | 结果 |
+|--------|------|
+| 招聘页链接 | [https://careers.datadoghq.com/all-jobs/](https://careers.datadoghq.com/all-jobs/) |
+| 核查结果 | 官网可访问，以"Beijing"搜索职位库，**无匹配职位结果** |
+
 ---
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*
