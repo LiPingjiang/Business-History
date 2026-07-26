@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京社招岗位推荐 — 大数据/数据系统/Agent研发</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --s-tier: #d32f2f;
+            --a-tier: #f57c00;
+            --b-tier: #388e3c;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e0e0e0;
+            --text: #212121;
+            --text-secondary: #616161;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a73e8, #6c63ff);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 2em; margin-bottom: 10px; }
+        header p { opacity: 0.9; font-size: 1.1em; }
+        .profile {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .profile span {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .tier-section {
+            margin-bottom: 40px;
+        }
+        .tier-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+        .tier-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .tier-s .tier-badge { background: var(--s-tier); }
+        .tier-a .tier-badge { background: var(--a-tier); }
+        .tier-b .tier-badge { background: var(--b-tier); }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: box-shadow 0.2s;
+            position: relative;
+        }
+        .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .card h3 { font-size: 1.1em; color: var(--text); }
+        .card .type-tag {
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #e3f2fd;
+            color: #1565c0;
+            white-space: nowrap;
+        }
+        .card .type-tag.央企 { background: #fce4ec; color: #c62828; }
+        .card .type-tag.外企 { background: #e8f5e9; color: #2e7d32; }
+        .card .type-tag.科研 { background: #f3e5f5; color: #6a1b9a; }
+        .card .type-tag.事业单位 { background: #fff3e0; color: #e65100; }
+        .card .type-tag.市属国企 { background: #e0f7fa; color: #00695c; }
+        .positions { margin: 10px 0; }
+        .positions li {
+            list-style: none;
+            padding: 4px 0;
+            font-size: 0.9em;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+        .positions li:last-child { border-bottom: none; }
+        .position-title { font-weight: 500; }
+        .position-meta { color: var(--text-secondary); font-size: 0.85em; }
+        .tech-stack {
+            margin: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tech-tag {
+            background: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.78em;
+            color: #424242;
+        }
+        .match-reason {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #fffde7;
+            border-left: 3px solid #fbc02d;
+            font-size: 0.85em;
+            border-radius: 0 4px 4px 0;
+        }
+        .links {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .links a {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.82em;
+            transition: background 0.2s;
+        }
+        .links a:hover { background: #1557b0; }
+        .links a.secondary {
+            background: white;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        .links a.secondary:hover { background: #e3f2fd; }
+        .salary { color: #d32f2f; font-weight: 500; font-size: 0.9em; }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .summary-table th, .summary-table td {
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+        .summary-table th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+        .summary-table tr:hover { background: #fafafa; }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+        @media (max-width: 768px) {
+            .cards { grid-template-columns: 1fr; }
+            header h1 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+    <h1>🎯 北京社招岗位推荐</h1>
+    <p>大数据研发 · 数据系统研发 · Agent研发 · 后端研发</p>
+    <div class="profile">
+        <span>📍 北京</span>
+        <span>💼 社招</span>
+        <span>🔧 Spark/Flink/Kafka</span>
+        <span>🤖 Agent/智能体</span>
+        <span>☕ Java/Python</span>
+    </div>
+    <p style="margin-top:15px;opacity:0.8;font-size:0.85em;">数据截止：2026-07-25 | 共筛选 400+ 家企业</p>
+</header>
+
+<!-- ==================== S 级 ==================== -->
+<section class="tier-section tier-s">
+    <div class="tier-header">
+        <span class="tier-badge">S 级</span>
+        <h2>强烈推荐 — 方向完全匹配，立即投递</h2>
+    </div>
+    <div class="cards">
+
+        <!-- 1. 中科院信工所 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中科院信息工程研究所</h3>
+                <span class="type-tag 科研">科研</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据研发工程师</span> <span class="position-meta">| 北京海淀 | 3-5年 | 在招✅</span></li>
+                <li><span class="position-title">高级大数据研发工程师</span> <span class="position-meta">| 北京海淀 | 5-10年</span></li>
+                <li><span class="position-title">大数据开发工程师</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">Spark工程师</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Hive</span>
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Flink</span>
+                <span class="tech-tag">HBase</span>
+            </div>
+            <p class="salary">💰 10-50K | 五险一金+补充医疗+住房补贴+免费班车</p>
+            <div class="match-reason">🎯 技术栈完美匹配：PB级实时数据流+离线数仓开发，199个岗位在招</div>
+            <div class="links">
+                <a href="https://www.zhipin.com/gongsir/d2e0f4a2e0c3f5f81nR-3dq4.html" target="_blank">BOSS直聘</a>
+                <a href="https://www.iie.ac.cn/zszpyztd/" target="_blank" class="secondary">官网招聘</a>
+            </div>
+        </div>
+
+        <!-- 2. 中国移动九天 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中国移动 九天/数智事业部</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据业务平台架构师</span> <span class="position-meta">| 大数据族 | 北京</span></li>
+                <li><span class="position-title">算法开发岗（模型与智能体）</span> <span class="position-meta">| 技术战略族 | 北京 | 3人 | 7/9发布</span></li>
+                <li><span class="position-title">推理优化岗（模型与智能体）</span> <span class="position-meta">| 技术战略族 | 北京 | 3人 | 7/9发布</span></li>
+                <li><span class="position-title">算法开发岗（大模型领域）</span> <span class="position-meta">| 大数据族 | 北京 | 7/9发布</span></li>
+                <li><span class="position-title">数据流通解决方案专家</span> <span class="position-meta">| 大数据族 | 北京 | 2人</span></li>
+                <li><span class="position-title">平台架构岗（数据库）</span> <span class="position-meta">| 开发测试族 | 北京</span></li>
+                <li><span class="position-title">大模型算法开发专家</span> <span class="position-meta">| 大数据族 | 北京 | 2人</span></li>
+                <li><span class="position-title">后端开发工程师（Python）</span> <span class="position-meta">| 开发测试族 | 北京/西安</span></li>
+            </ul>
+            <div class="match-reason">🎯 大数据平台架构 + Agent/智能体方向，两个核心背景都能用上。5页岗位持续在招！</div>
+            <div class="links">
+                <a href="https://wecruit.hotjob.cn/SU60fa4d4e2f9d247b98de3fdc/pb/social.html" target="_blank">官方社招入口</a>
+            </div>
+        </div>
+
+        <!-- 3. 联通数科 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>联通数字科技有限公司（联通数科）</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据开发工程师</span> <span class="position-meta">| 北京亦庄 | 5-10年 | 本科</span></li>
+                <li><span class="position-title">智算平台研发工程师</span> <span class="position-meta">| J13323 | 北京 | 7/15发布</span></li>
+                <li><span class="position-title">大数据运营岗</span> <span class="position-meta">| J13319 | 北京西城</span></li>
+                <li><span class="position-title">AI技术研发工程师</span> <span class="position-meta">| J13320 | 北京西城</span></li>
+                <li><span class="position-title">智能运维大模型算法高级专家</span> <span class="position-meta">| J13317 | 北京西城</span></li>
+                <li><span class="position-title">平台研发工程师</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">数据科学家（博士专招）</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <p class="salary">💰 20-50K | 131个岗位在招</p>
+            <div class="match-reason">🎯 央企数字化核心子公司，数据智能事业部专注大数据+AI，方向精准</div>
+            <div class="links">
+                <a href="https://cudt.zhiye.com/social/jobs" target="_blank">官网社招</a>
+                <a href="https://www.zhipin.com/" target="_blank" class="secondary">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 4. 联通数智 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>联通数据智能有限公司（联通数智）</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">平台研发工程师</span> <span class="position-meta">| 北京/成都/杭州</span></li>
+                <li><span class="position-title">应用开发工程师</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">模算技术工程师</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">AI项目经理</span> <span class="position-meta">| 北京 | 6/24发布</span></li>
+            </ul>
+            <div class="match-reason">🎯 2024年9月新成立，联通大数据与AI基座能力与产品中心，快速扩张期</div>
+            <div class="links">
+                <a href="https://cudataintelligence.zhiye.com/social/jobs" target="_blank">官网社招</a>
+                <a href="https://www.iguopin.com/company?id=116715746301575367" target="_blank" class="secondary">国聘</a>
+            </div>
+        </div>
+
+        <!-- 5. TeleAI -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中电信人工智能公司（TeleAI）</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据PaaS开发工程师（MPP方向）</span> <span class="position-meta">| 北京 | 1-3年</span></li>
+                <li><span class="position-title">大数据平台开发运维工程师</span> <span class="position-meta">| 北京 | 5-10年</span></li>
+                <li><span class="position-title">大数据开发运维</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">大模型编程技术负责人</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">语义大模型评测专家-SWE/Agent方向</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <p class="salary">83个岗位在招</p>
+            <div class="match-reason">🎯 大数据PaaS平台研发 + MPP方向 + Agent/大模型编程，与数据系统研发高度匹配</div>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘搜索"TeleAI"</a>
+            </div>
+        </div>
+
+        <!-- 6. 领悦BMW -->
+        <div class="card">
+            <div class="card-header">
+                <h3>领悦数字信息技术（BMW宝马）</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">高级大数据工程师 - 数据仓库</span> <span class="position-meta">| 北京朝阳 | 5-10年</span></li>
+                <li><span class="position-title">Dev Lead (Data Analyst)</span> <span class="position-meta">| 北京 | 5-10年</span></li>
+                <li><span class="position-title">Manager Big Data AD（自动驾驶）</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">Asst. Manager AI&Analytics Engineer</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">Manager Cloud Engineer</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Hadoop</span>
+                <span class="tech-tag">Hive</span>
+                <span class="tech-tag">Presto</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Data Warehouse</span>
+                <span class="tech-tag">ML</span>
+            </div>
+            <div class="match-reason">🎯 外企待遇+大数据数仓全栈，技术栈完全对口。2026年与火山引擎深化AI合作</div>
+            <div class="links">
+                <a href="https://careersite.tupu360.com/bmw/position/index?recruitmentType=SOCIALRECRUITMENT" target="_blank">BMW社招官网</a>
+                <a href="https://www.zhipin.com/" target="_blank" class="secondary">BOSS直聘</a>
+                <a href="https://www.liepin.com/" target="_blank" class="secondary">猎聘</a>
+            </div>
+        </div>
+
+        <!-- 7. 亚马逊 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>亚马逊 Amazon / AWS</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">Data Engineer I</span> <span class="position-meta">| Job ID: 10446769 | China</span></li>
+                <li><span class="position-title">Data Engineer II, TITANS</span> <span class="position-meta">| Job ID: 10404804 | China</span></li>
+                <li><span class="position-title">Data Engineer, Partner Experience</span> <span class="position-meta">| Job ID: 10444729 | China</span></li>
+            </ul>
+            <div class="match-reason">🎯 顶级外企Data Engineer岗，AWS大数据/数据湖方向</div>
+            <div class="links">
+                <a href="https://www.amazon.jobs/en/search?base_query=data+engineer&loc_query=Beijing%2C+China" target="_blank">Amazon Jobs</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== A 级 ==================== -->
+<section class="tier-section tier-a">
+    <div class="tier-header">
+        <span class="tier-badge">A 级</span>
+        <h2>值得投递 — 方向相关，平台或稳定性突出</h2>
+    </div>
+    <div class="cards">
+
+        <!-- 8. 中科院自动化所 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中科院自动化研究所</h3>
+                <span class="type-tag 科研">科研</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">科学智能体开发工程师</span> <span class="position-meta">| J10623 | 北京海淀 | 7/16发布 🆕</span></li>
+                <li><span class="position-title">算法开发工程师</span> <span class="position-meta">| J10624 | 北京海淀 | 7/16发布 🆕</span></li>
+                <li><span class="position-title">多模态算法工程师</span> <span class="position-meta">| J10621 | 北京海淀 | 7/13发布</span></li>
+                <li><span class="position-title">视觉算法工程师</span> <span class="position-meta">| J10622 | 北京海淀 | 7/13发布</span></li>
+            </ul>
+            <div class="match-reason">🎯 科学智能体开发工程师与Agent研发背景高度匹配！AI顶级研究机构</div>
+            <div class="links">
+                <a href="https://casia.zhiye.com/jobs" target="_blank">官网社招</a>
+            </div>
+        </div>
+
+        <!-- 9. 中国信通院 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中国信息通信研究院（信通院）</h3>
+                <span class="type-tag 事业单位">事业单位</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">人工智能数据研究员</span> <span class="position-meta">| 26SAI15 | AI研究所·平台与工程化部 | 北京 | 招3人 | 7/16</span></li>
+                <li><span class="position-title">人工智能产业研究员</span> <span class="position-meta">| 26SAI38 | AI研究所·大数据与智能化部 | 北京 | 7/3</span></li>
+                <li><span class="position-title">数据空间产业研究员</span> <span class="position-meta">| 2026SLH07 | 工业互联网与工业数据研究部 | 北京 | 7/14</span></li>
+                <li><span class="position-title">经济大数据研究员</span> <span class="position-meta">| 26SLH22 | 北京</span></li>
+                <li><span class="position-title">数智技术研究工程师</span> <span class="position-meta">| 北京 | 硕士</span></li>
+                <li><span class="position-title">信息系统建设管理岗（AI应用）</span> <span class="position-meta">| 26SZW05 | 北京 | 7/17</span></li>
+            </ul>
+            <p class="salary">💰 15-30K | 443个岗位 | 部分岗位解决北京户口</p>
+            <div class="match-reason">🎯 ICT领域最权威事业单位，AI研究所+大数据与智能化部持续扩招。偏研究/标准方向</div>
+            <div class="links">
+                <a href="https://wecruit.hotjob.cn/SU642fbf5fbef57c1e269fa798/pb/social.html" target="_blank">官方社招入口</a>
+            </div>
+        </div>
+
+        <!-- 10. 中科院计算所 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中科院计算技术研究所</h3>
+                <span class="type-tag 科研">科研</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据开发工程师</span> <span class="position-meta">| 北京海淀 | 1-3年 | 硕士</span></li>
+                <li><span class="position-title">开发工程师（后端）</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">具身智能算法开发工程师</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">K8s</span>
+                <span class="tech-tag">GitLab</span>
+            </div>
+            <p class="salary">💰 18-25K·14薪 | 科研平台价值高</p>
+            <div class="links">
+                <a href="http://ict.cas.cn/rczp/" target="_blank">官网招聘</a>
+            </div>
+        </div>
+
+        <!-- 11. 中科院网络信息中心 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中科院计算机网络信息中心</h3>
+                <span class="type-tag 科研">科研</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">数据开发</span> <span class="position-meta">| 北京 | 1-3年 | 本科 | 在招✅</span></li>
+                <li><span class="position-title">科学数据智能化技术高级研发岗</span> <span class="position-meta">| 高级工程师三级岗</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">HiveSQL</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Oracle</span>
+                <span class="tech-tag">ETL</span>
+            </div>
+            <p class="salary">五险一金+补充医疗+住房补贴+餐补 | 国家级大数据实验室</p>
+            <div class="match-reason">🎯 中国互联网诞生地，国家发改委大数据分析与计算技术国家地方联合工程实验室</div>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 12. 微软 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>微软 Microsoft</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">Senior Software Engineer - Azure Storage</span> <span class="position-meta">| Beijing</span></li>
+                <li><span class="position-title">Principal Software Engineer</span> <span class="position-meta">| Beijing</span></li>
+                <li><span class="position-title">Software Engineer - Kusto（数据平台）</span> <span class="position-meta">| Beijing</span></li>
+                <li><span class="position-title">Software Engineer</span> <span class="position-meta">| Beijing</span></li>
+            </ul>
+            <div class="match-reason">🎯 Kusto是微软核心数据平台（Azure Data Explorer），SDE岗位为主</div>
+            <div class="links">
+                <a href="https://apply.careers.microsoft.com/careers" target="_blank">Microsoft Careers</a>
+            </div>
+        </div>
+
+        <!-- 13. FreeWheel -->
+        <div class="card">
+            <div class="card-header">
+                <h3>FreeWheel（Comcast旗下）</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">Sr. Software Engineer, Big Data, RPT</span> <span class="position-meta">| 北京 | 3-5年</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">分布式系统</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Hadoop</span>
+                <span class="tech-tag">Spark Streaming</span>
+            </div>
+            <p class="salary">五险一金+股票期权+免费班车+餐补</p>
+            <div class="match-reason">🎯 海量投放数据处理、实时数据服务、数据仓库，技术栈对口</div>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘搜索"FreeWheel"</a>
+                <a href="https://www.freewheel.com/careers" target="_blank" class="secondary">官网（可能空白）</a>
+            </div>
+        </div>
+
+        <!-- 14. 西门子 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>西门子 Siemens — Data & AI</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">Principal Engineer, AI and ML Systems</span> <span class="position-meta">| Data & AI | 全国</span></li>
+                <li><span class="position-title">Senior Software Engineer, AI and ML Systems</span> <span class="position-meta">| Data & AI | 全国</span></li>
+                <li><span class="position-title">GenAI Pod Lead</span> <span class="position-meta">| Data & AI | 全国</span></li>
+                <li><span class="position-title">Robotics Pod Lead</span> <span class="position-meta">| Data & AI | 全国</span></li>
+                <li><span class="position-title">Principal Applied Scientist</span> <span class="position-meta">| Data & AI | 全国</span></li>
+            </ul>
+            <div class="match-reason">🎯 Data & AI部门8个岗位全部在招！含AI/ML系统工程师。需确认是否含北京</div>
+            <div class="links">
+                <a href="https://jobs.siemens.com.cn/siemens/position/index?recruitmentType=SOCIALRECRUITMENT" target="_blank">西门子社招</a>
+            </div>
+        </div>
+
+        <!-- 15. 工行软开 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>工商银行软件开发中心</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">科技专业人才（研发生产方向）</span> <span class="position-meta">| 北京+6城 | 48个岗位</span></li>
+                <li><span class="position-title">新技术研究和应用</span> <span class="position-meta">| 计算机/软件工程专业</span></li>
+            </ul>
+            <p class="salary">央企银行IT核心部门，稳定性极高</p>
+            <div class="match-reason">🎯 工行核心IT研发部门2026社招正在进行，计算机/软件专业对口</div>
+            <div class="links">
+                <a href="https://job.icbc.com.cn/pc/index.html#/main/social/home/struct" target="_blank">工行社招官网</a>
+            </div>
+        </div>
+
+        <!-- 16. 华能信息 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>华能信息技术有限公司</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">AI应用开发工程师</span> <span class="position-meta">| 北京朝阳 | 5-10年</span></li>
+                <li><span class="position-title">高级后端开发工程师</span> <span class="position-meta">| 北京 | 5-10年</span></li>
+                <li><span class="position-title">Java开发工程师</span> <span class="position-meta">| 北京 | 3-5年</span></li>
+            </ul>
+            <p class="salary">💰 20-50K | 数智华能建设主力军</p>
+            <div class="match-reason">🎯 后端+AI方向，央企数智化建设，大数据/云计算/AI方向</div>
+            <div class="links">
+                <a href="https://zhaopin.chng.com.cn/" target="_blank">华能招聘官网</a>
+                <a href="https://www.zhipin.com/" target="_blank" class="secondary">BOSS直聘</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== B 级 ==================== -->
+<section class="tier-section tier-b">
+    <div class="tier-header">
+        <span class="tier-badge">B 级</span>
+        <h2>可关注 — 部分匹配或需持续跟进</h2>
+    </div>
+    <div class="cards">
+
+        <!-- 17. 智慧足迹 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>智慧足迹数据科技（联通系）</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据开发工程师</span> <span class="position-meta">| 北京西城</span></li>
+                <li><span class="position-title">数据分析师</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">AI大模型产品经理</span> <span class="position-meta">| 北京 | 5-10年</span></li>
+            </ul>
+            <p class="position-meta">聚焦政务大数据 | 人口大数据/经济治理</p>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 18. 联通主站 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中国联通（主站）</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据平台研发工程师</span> <span class="position-meta">| 北京西城·金融街 | 3-5年 | 本科</span></li>
+            </ul>
+            <p class="salary">💰 20-40K | CDN平台数据中台能力架构设计、实时/离线计算</p>
+            <div class="links">
+                <a href="https://www.chinaunicom.com.cn/46/menu01/529/column06" target="_blank">联通社招入口</a>
+                <a href="https://www.zhipin.com/" target="_blank" class="secondary">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 19. 北京金融大数据 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>北京金融大数据有限公司</h3>
+                <span class="type-tag 市属国企">市属国企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">数据开发岗</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">业务开发岗（Java）</span> <span class="position-meta">| 北京</span></li>
+                <li><span class="position-title">数据分析岗</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <p class="position-meta">北京数据集团旗下 | 北京国际大数据交易所</p>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 20. 国家数据发展研究院 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>国家数据发展研究院</h3>
+                <span class="type-tag 事业单位">事业单位</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">数据研发（社招）</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <p class="position-meta">国家数据局直属 | ⚠️ 要求北京户口</p>
+            <div class="links">
+                <a href="https://www.nda.gov.cn/sjj/" target="_blank">官网</a>
+            </div>
+        </div>
+
+        <!-- 21. CCRC -->
+        <div class="card">
+            <div class="card-header">
+                <h3>市场监管大数据中心（CCRC）</h3>
+                <span class="type-tag 事业单位">事业单位</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">大数据分析</span> <span class="position-meta">| 北京 | 编制内</span></li>
+            </ul>
+            <p class="position-meta">国家市场监督管理总局直属正司局级事业单位</p>
+            <div class="links">
+                <a href="https://www.isccc.gov.cn/" target="_blank">官网</a>
+            </div>
+        </div>
+
+        <!-- 22. 联通软件研究院 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中国联通软件研究院</h3>
+                <span class="type-tag 央企">央企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">软件研发 / 大数据开发 / AI算法</span> <span class="position-meta">| 2026招聘已启动（7/14）</span></li>
+            </ul>
+            <p class="position-meta">AI智能化占比>80% | 智慧大脑方向</p>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 23. 凯捷 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>凯捷 Capgemini</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">数据工程师（大数据/ETL）</span> <span class="position-meta">| 北京 | ⚠️ 中国区当前0岗位</span></li>
+            </ul>
+            <p class="position-meta">全球6000+岗位，中国区暂停招聘，持续关注</p>
+            <div class="links">
+                <a href="https://www.capgemini.com/careers/join-capgemini/job-search/" target="_blank">全球招聘</a>
+            </div>
+        </div>
+
+        <!-- 24. 首都信息 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>首都信息发展股份有限公司</h3>
+                <span class="type-tag 市属国企">市属国企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">数据研发工程师</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 25. 瞬联科技 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>瞬联科技（Pactera系）</h3>
+                <span class="type-tag 外企">外企</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">Data Engineer 数据工程师</span> <span class="position-meta">| 北京</span></li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AWS</span>
+            </div>
+            <div class="links">
+                <a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a>
+            </div>
+        </div>
+
+        <!-- 26. 中科院软件所 -->
+        <div class="card">
+            <div class="card-header">
+                <h3>中科院软件研究所</h3>
+                <span class="type-tag 科研">科研</span>
+            </div>
+            <ul class="positions">
+                <li><span class="position-title">2026年高级岗位招聘</span> <span class="position-meta">| 北京 | 5/19发布</span></li>
+            </ul>
+            <p class="position-meta">偏基础研究和系统软件方向</p>
+            <div class="links">
+                <a href="http://www.is.cas.cn/rcdw2016/rczp2016/" target="_blank">官网招聘</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== 汇总表 ==================== -->
+<section style="margin-top:40px;">
+    <h2 style="margin-bottom:20px;">📊 技能 → 岗位匹配速查</h2>
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th>你的技能</th>
+                <th>最匹配企业</th>
+                <th>代表岗位</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>大数据研发</strong><br><small>Spark/Flink/Kafka/Hive</small></td>
+                <td>中科院信工所、联通数科、TeleAI、领悦BMW、FreeWheel</td>
+                <td>大数据研发工程师、大数据PaaS开发、高级大数据工程师-数仓</td>
+            </tr>
+            <tr>
+                <td><strong>数据系统研发</strong><br><small>平台架构/数据中台</small></td>
+                <td>移动九天、联通数智、TeleAI、联通数科</td>
+                <td>大数据业务平台架构师、智算平台研发、平台架构岗（数据库）</td>
+            </tr>
+            <tr>
+                <td><strong>Agent研发</strong><br><small>智能体/大模型</small></td>
+                <td>移动九天、中科院自动化所、TeleAI、信通院</td>
+                <td>算法开发岗（模型与智能体）、科学智能体开发工程师、大模型编程技术负责人</td>
+            </tr>
+            <tr>
+                <td><strong>后端研发</strong><br><small>Java/Python/分布式</small></td>
+                <td>华能信息、工行软开、微软、Amazon、FreeWheel</td>
+                <td>高级后端开发工程师、Software Engineer、Sr. Big Data Engineer</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ==================== 薪资对比 ==================== -->
+<section style="margin-top:40px;">
+    <h2 style="margin-bottom:20px;">💰 薪资对比参考</h2>
+    <table class="summary-table">
+        <thead>
+            <tr><th>类型</th><th>代表企业</th><th>大数据研发薪资</th><th>特点</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>央企（运营商）</td><td>联通数科/移动九天/TeleAI</td><td>20-50K/月</td><td>稳定、福利好、有户口可能</td></tr>
+            <tr><td>外企</td><td>领悦BMW/FreeWheel/Amazon</td><td>30-60K/月</td><td>WLB好、技术栈新、股票期权</td></tr>
+            <tr><td>科研单位</td><td>中科院信工所/计算所</td><td>10-30K/月</td><td>平台高、住房补贴、部分有编制</td></tr>
+            <tr><td>事业单位</td><td>信通院/国家数据院</td><td>15-30K/月</td><td>稳定、有编制可能、解决户口</td></tr>
+            <tr><td>市属国企</td><td>北京金融大数据/首都信息</td><td>15-25K/月</td><td>稳定、北京本地</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ==================== 投递优先级 ==================== -->
+<section style="margin-top:40px;">
+    <h2 style="margin-bottom:20px;">🚀 投递优先级建议</h2>
+    <table class="summary-table">
+        <thead>
+            <tr><th>优先级</th><th>企业</th><th>理由</th><th>投递链接</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>🥇 立即投</td>
+                <td>中科院信工所</td>
+                <td>技术栈完美匹配+199个岗位在招</td>
+                <td><a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a></td>
+            </tr>
+            <tr>
+                <td>🥇 立即投</td>
+                <td>中国移动九天</td>
+                <td>大数据+智能体双方向+7月批量更新</td>
+                <td><a href="https://wecruit.hotjob.cn/SU60fa4d4e2f9d247b98de3fdc/pb/social.html" target="_blank">hotjob</a></td>
+            </tr>
+            <tr>
+                <td>🥇 立即投</td>
+                <td>联通数科</td>
+                <td>131个岗位+大数据智能事业部</td>
+                <td><a href="https://cudt.zhiye.com/social/jobs" target="_blank">官网</a></td>
+            </tr>
+            <tr>
+                <td>🥈 本周投</td>
+                <td>领悦BMW</td>
+                <td>外企+大数据数仓全栈对口</td>
+                <td><a href="https://careersite.tupu360.com/bmw/position/index?recruitmentType=SOCIALRECRUITMENT" target="_blank">BMW社招</a></td>
+            </tr>
+            <tr>
+                <td>🥈 本周投</td>
+                <td>亚马逊</td>
+                <td>顶级外企Data Engineer</td>
+                <td><a href="https://www.amazon.jobs/en/search?base_query=data+engineer&loc_query=Beijing%2C+China" target="_blank">Amazon Jobs</a></td>
+            </tr>
+            <tr>
+                <td>🥈 本周投</td>
+                <td>TeleAI</td>
+                <td>大数据PaaS+Agent方向</td>
+                <td><a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a></td>
+            </tr>
+            <tr>
+                <td>🥈 本周投</td>
+                <td>中科院自动化所</td>
+                <td>科学智能体开发工程师（7/16新发）</td>
+                <td><a href="https://casia.zhiye.com/jobs" target="_blank">官网</a></td>
+            </tr>
+            <tr>
+                <td>🥉 跟进投</td>
+                <td>微软</td>
+                <td>Kusto数据平台+SDE</td>
+                <td><a href="https://apply.careers.microsoft.com/careers" target="_blank">Microsoft</a></td>
+            </tr>
+            <tr>
+                <td>🥉 跟进投</td>
+                <td>FreeWheel</td>
+                <td>大数据+Spark Streaming</td>
+                <td><a href="https://www.zhipin.com/" target="_blank">BOSS直聘</a></td>
+            </tr>
+            <tr>
+                <td>🥉 跟进投</td>
+                <td>工行软开中心</td>
+                <td>央企银行IT核心+48岗位</td>
+                <td><a href="https://job.icbc.com.cn/pc/index.html#/main/social/home/struct" target="_blank">工行官网</a></td>
+            </tr>
+            <tr>
+                <td>🥉 跟进投</td>
+                <td>西门子 Data & AI</td>
+                <td>8个AI/ML系统岗位</td>
+                <td><a href="https://jobs.siemens.com.cn/siemens/position/index?recruitmentType=SOCIALRECRUITMENT" target="_blank">西门子社招</a></td>
+            </tr>
+            <tr>
+                <td>📋 持续关注</td>
+                <td>信通院/计算所/华能</td>
+                <td>有潜力但薪资/方向需确认</td>
+                <td><a href="https://wecruit.hotjob.cn/SU642fbf5fbef57c1e269fa798/pb/social.html" target="_blank">信通院</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer class="footer">
+    <p>数据来源：BOSS直聘、猎聘、智联招聘、各企业官网、国聘 | 搜索时间：2026-07-15 ~ 2026-07-25</p>
+    <p>共排查 400+ 家企业（央企97家 + 外企394家 + 科研/事业单位）</p>
+    <p>⚠️ 岗位状态以实际平台为准，建议投递前再次确认在招状态</p>
+</footer>
+
+</div>
+</body>
+</html>
