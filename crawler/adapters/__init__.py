@@ -7,6 +7,14 @@ from adapters.microsoft import MicrosoftAdapter
 from adapters.siemens import SiemensAdapter
 from adapters.bmw import BmwAdapter
 
+# Playwright adapters (lazy import to avoid hard dependency)
+try:
+    from adapters.zhiye_pw import ZhiyePlaywrightAdapter
+    from adapters.hotjob_pw import HotjobPlaywrightAdapter
+    _HAS_PLAYWRIGHT = True
+except ImportError:
+    _HAS_PLAYWRIGHT = False
+
 ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "workday": WorkdayAdapter,
     "zhiye": ZhiyeAdapter,
@@ -16,6 +24,10 @@ ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "siemens": SiemensAdapter,
     "bmw": BmwAdapter,
 }
+
+if _HAS_PLAYWRIGHT:
+    ADAPTER_REGISTRY["zhiye_pw"] = ZhiyePlaywrightAdapter
+    ADAPTER_REGISTRY["hotjob_pw"] = HotjobPlaywrightAdapter
 
 
 def get_adapter(name: str) -> BaseAdapter:

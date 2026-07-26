@@ -65,8 +65,8 @@ WORKDAY_COMPANIES = [
 ]
 
 ZHIYE_COMPANIES = [
-    CompanyConfig("航天科工", "zhiye", "https://casic.zhiye.com",
-                  params={"type": "social"}),
+    # 航天科工 casic.zhiye.com 是旧版校招系统，无社招API，跳过
+    # CompanyConfig("航天科工", "zhiye", "https://casic.zhiye.com", params={"type": "social"}),
     CompanyConfig("三星中国", "zhiye", "https://dearsamsung.zhiye.com",
                   params={"type": "social"}),
     CompanyConfig("联通数科", "zhiye", "https://cudt.zhiye.com",
@@ -78,17 +78,17 @@ ZHIYE_COMPANIES = [
 ]
 
 HOTJOB_COMPANIES = [
-    CompanyConfig("中国移动九天", "hotjob", "https://wecruit.hotjob.cn/SU60fa4d4e2f9d247b98de3fdc/pb/social.html",
+    CompanyConfig("中国移动九天", "hotjob_pw", "https://wecruit.hotjob.cn/SU60fa4d4e2f9d247b98de3fdc/pb/social.html",
                   params={"su_id": "SU60fa4d4e2f9d247b98de3fdc"}),
-    CompanyConfig("中国信通院", "hotjob", "https://wecruit.hotjob.cn/SU642fbf5fbef57c1e269fa798/pb/social.html",
+    CompanyConfig("中国信通院", "hotjob_pw", "https://wecruit.hotjob.cn/SU642fbf5fbef57c1e269fa798/pb/social.html",
                   params={"su_id": "SU642fbf5fbef57c1e269fa798"}),
-    CompanyConfig("中国华电", "hotjob", "https://chd.hotjob.cn",
+    CompanyConfig("中国华电", "hotjob_pw", "https://chd.hotjob.cn",
                   params={"su_id": "chd"}),
-    CompanyConfig("中国中车", "hotjob", "https://crrc.hotjob.cn/SU64d47c466202cc36e27a52d4/pb/social.html",
+    CompanyConfig("中国中车", "hotjob_pw", "https://crrc.hotjob.cn/SU64d47c466202cc36e27a52d4/pb/social.html",
                   params={"su_id": "SU64d47c466202cc36e27a52d4"}),
-    CompanyConfig("一汽大众", "hotjob", "https://faw-vw.hotjob.cn",
+    CompanyConfig("一汽大众", "hotjob_pw", "https://faw-vw.hotjob.cn",
                   params={"su_id": "faw-vw"}),
-    CompanyConfig("中化集团", "hotjob", "https://sinochem.hotjob.cn",
+    CompanyConfig("中化集团", "hotjob_pw", "https://sinochem.hotjob.cn",
                   params={"su_id": "sinochem"}),
 ]
 
