@@ -6,6 +6,7 @@ from adapters.amazon import AmazonAdapter
 from adapters.microsoft import MicrosoftAdapter
 from adapters.siemens import SiemensAdapter
 from adapters.bmw import BmwAdapter
+from adapters.astrazeneca import AstraZenecaAdapter
 
 # Playwright adapters (lazy import to avoid hard dependency)
 try:
@@ -23,6 +24,7 @@ ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "microsoft": MicrosoftAdapter,
     "siemens": SiemensAdapter,
     "bmw": BmwAdapter,
+    "astrazeneca": AstraZenecaAdapter,
 }
 
 if _HAS_PLAYWRIGHT:

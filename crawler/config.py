@@ -105,6 +105,8 @@ CUSTOM_COMPANIES = [
                   params={"recruitmentType": "SOCIALRECRUITMENT"}),
     CompanyConfig("BMW/领悦", "bmw", "https://careersite.tupu360.com/bmw/position/index",
                   params={"recruitmentType": "SOCIALRECRUITMENT"}),
+    CompanyConfig("AstraZeneca", "astrazeneca", "https://careers.astrazeneca.com/search-jobs",
+                  params={"keywords": "data", "location": "Beijing, China"}),
 ]
 
 # 汇总所有企业
