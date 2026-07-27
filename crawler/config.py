@@ -62,6 +62,10 @@ WORKDAY_COMPANIES = [
                   params={"location": "China"}),
     CompanyConfig("Samsung SEC", "workday", "https://sec.wd3.myworkdayjobs.com/Samsung_Careers",
                   params={"location": "China"}),
+    CompanyConfig("Dell", "workday", "https://dell.wd1.myworkdayjobs.com/External",
+                  params={"location": "China"}),
+    CompanyConfig("Shell", "workday", "https://shell.wd3.myworkdayjobs.com/ShellCareers",
+                  params={"location": "China"}),
 ]
 
 ZHIYE_COMPANIES = [
