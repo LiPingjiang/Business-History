@@ -122,51 +122,12 @@ SMARTRECRUITERS_COMPANIES = [
 # Phase 4: 扩展 zhiye.com 央企 (45家)
 # ============================================================
 
+# 注：zhiye.com 新版API(/api/Jobad/GetJobAdPageList)仅3家可用: picc, cntaiping, chinalife
+# 其余41家央企使用旧版北森Portal系统，API路径不同，暂不支持
 ZHIYE_COMPANIES_EXTRA = [
-    CompanyConfig("中国铁道建筑集团", "zhiye", "https://crcc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国冶金科工集团", "zhiye", "https://mcc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国能源建设集团", "zhiye", "https://ceec.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国交通建设集团", "zhiye", "https://cccc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国建筑集团", "zhiye", "https://cscec.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国电力建设集团", "zhiye", "https://powerchina.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国建材集团", "zhiye", "https://cnbm.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国华录集团", "zhiye", "https://hualu.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国东方电气集团", "zhiye", "https://dongfang.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国商用飞机", "zhiye", "https://comac.zhiye.com", params={"type": "social"}),
-    CompanyConfig("东风汽车集团", "zhiye", "https://dfmc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("哈尔滨电气集团", "zhiye", "https://harbin-electric.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国一重集团", "zhiye", "https://cfhi.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国第一汽车集团", "zhiye", "https://faw.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国机械工业集团", "zhiye", "https://sinomach.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国兵器装备集团", "zhiye", "https://csgc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国航空发动机集团", "zhiye", "https://aecc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国电子科技集团", "zhiye", "https://cetc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国船舶集团", "zhiye", "https://cssc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国兵器工业集团", "zhiye", "https://norincogroup.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国航空工业集团", "zhiye", "https://avic.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国航天科工集团", "zhiye", "https://casic.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国航天科技集团", "zhiye", "https://cast.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国五矿集团", "zhiye", "https://minmetals.zhiye.com", params={"type": "social"}),
-    CompanyConfig("鞍钢集团", "zhiye", "https://ansteel.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国黄金集团", "zhiye", "https://chinagold.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国铝业集团", "zhiye", "https://chinalco.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国诚通控股", "zhiye", "https://chengtong.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国远洋海运集团", "zhiye", "https://coscoshipping.zhiye.com", params={"type": "social"}),
-    CompanyConfig("国家开发投资集团", "zhiye", "https://sdic.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国保利集团", "zhiye", "https://poly.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国核工业集团", "zhiye", "https://cnnc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国广核集团", "zhiye", "https://cgnpc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国三峡集团", "zhiye", "https://ctg.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国节能环保集团", "zhiye", "https://cecep.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国化学工程集团", "zhiye", "https://cncec.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国中化控股", "zhiye", "https://sinochem.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国储备粮管理集团", "zhiye", "https://sinograin.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国盐业集团", "zhiye", "https://chinasalt.zhiye.com", params={"type": "social"}),
     CompanyConfig("中国人民保险", "zhiye", "https://picc.zhiye.com", params={"type": "social"}),
     CompanyConfig("中国太平保险", "zhiye", "https://cntaiping.zhiye.com", params={"type": "social"}),
     CompanyConfig("中国人寿", "zhiye", "https://chinalife.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国银行", "zhiye", "https://boc.zhiye.com", params={"type": "social"}),
-    CompanyConfig("中国电子信息产业集团", "zhiye", "https://cec.zhiye.com", params={"type": "social"}),
 ]
 
 # 汇总所有企业
