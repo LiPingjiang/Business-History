@@ -10,6 +10,8 @@ from adapters.astrazeneca import AstraZenecaAdapter
 from adapters.smartrecruiters import SmartRecruitersAdapter
 from adapters.mokahr import MokahrAdapter
 from adapters.recruitportal import RecruitPortalAdapter
+from adapters.spdb import SPDBAdapter
+from adapters.cmbc import CmbcAdapter
 
 # Playwright adapters (lazy import to avoid hard dependency)
 try:
@@ -31,6 +33,8 @@ ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "smartrecruiters": SmartRecruitersAdapter,
     "mokahr": MokahrAdapter,
     "recruitportal": RecruitPortalAdapter,
+    "spdb": SPDBAdapter,
+    "cmbc": CmbcAdapter,
 }
 
 if _HAS_PLAYWRIGHT:
