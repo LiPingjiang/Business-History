@@ -1,0 +1,45 @@
+[Tue Jul 28 09:00:03 CST 2026] Starting daily crawl...
+开始爬取 32 家企业...
+
+[1/32] NVIDIA (workday)... ✓ 20 jobs
+[2/32] Intel (workday)... ✓ 16 jobs
+[3/32] HP (workday)... ✓ 5 jobs
+[4/32] Adobe (workday)... ✓ 0 jobs
+[5/32] 3M (workday)... ✓ 13 jobs
+[6/32] GE Aerospace (workday)... ✓ 6 jobs
+[7/32] Pfizer (workday)... ✓ 20 jobs
+[8/32] Red Hat (workday)... ✓ 0 jobs
+[9/32] Visa (workday)... ✓ 4 jobs
+[10/32] Mastercard (workday)... ✓ 2 jobs
+[11/32] Samsung SEC (workday)... ✓ 2 jobs
+[12/32] Dell (workday)... ✓ 0 jobs
+[13/32] Shell (workday)... ✓ 11 jobs
+[14/32] 三星中国 (zhiye)... ✓ 12 jobs
+[15/32] 联通数科 (zhiye)... ✓ 50 jobs
+[16/32] 联通数智 (zhiye)... ✓ 0 jobs
+[17/32] 中科院自动化所 (zhiye)... ✓ 4 jobs
+[18/32] 中国移动九天 (hotjob_pw)... Traceback (most recent call last):
+  File "/Users/pingjiangli/Code/Business-History/crawler/runner.py", line 123, in <module>
+    main()
+  File "/Users/pingjiangli/Code/Business-History/crawler/runner.py", line 106, in main
+    results = crawl_all(companies)
+  File "/Users/pingjiangli/Code/Business-History/crawler/runner.py", line 37, in crawl_all
+    adapters_cache[company.adapter] = get_adapter(company.adapter)
+  File "/Users/pingjiangli/Code/Business-History/crawler/adapters/__init__.py", line 41, in get_adapter
+    raise ValueError(f"Unknown adapter: {name}")
+ValueError: Unknown adapter: hotjob_pw
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   crawler/daily_crawl.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	crawler/logs/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Everything up-to-date
+[Tue Jul 28 09:00:35 CST 2026] Daily crawl completed.

@@ -134,5 +134,29 @@ ZHIYE_COMPANIES_EXTRA = [
     CompanyConfig("中国人寿", "zhiye", "https://chinalife.zhiye.com", params={"type": "social"}),
 ]
 
+# ============================================================
+# Phase 5: 银行 + 事业单位/研究机构
+# ============================================================
+
+# 北京银行已在 ZHIYE_COMPANIES 中（bankofbeijing.zhiye.com）
+BANK_COMPANIES = [
+    CompanyConfig("中信银行", "citicbank", "https://job.citicbank.com",
+                  params={"workAddr": ["110000"]}),
+]
+
+# Mokahr 平台企业（银行+研究机构）
+MOKAHR_COMPANIES = [
+    CompanyConfig("智源研究院", "mokahr", "https://app.mokahr.com/social-recruitment/baai/42173"),
+    CompanyConfig("中信百信银行", "mokahr", "https://app.mokahr.com/social-recruitment/aibank/46870"),
+    CompanyConfig("苏商银行", "mokahr", "https://app.mokahr.com/social-recruitment/snb/45591"),
+]
+
 # 汇总所有企业
-ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA
+ZHIYE_RESEARCH_COMPANIES = [
+    CompanyConfig("中科院自动化所", "zhiye", "https://casia.zhiye.com"),
+    CompanyConfig("中金公司", "zhiye", "https://cicc.zhiye.com"),
+    CompanyConfig("中国银河证券", "zhiye", "https://chinastock.zhiye.com"),
+]
+
+# 汇总所有企业
+ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES
