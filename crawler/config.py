@@ -135,6 +135,7 @@ ZHIYE_COMPANIES_EXTRA = [
 ]
 
 # ============================================================
+
 # Phase 5: 银行 + 事业单位/研究机构
 # ============================================================
 
@@ -142,6 +143,42 @@ ZHIYE_COMPANIES_EXTRA = [
 BANK_COMPANIES = [
     CompanyConfig("中信银行", "citicbank", "https://job.citicbank.com",
                   params={"workAddr": ["110000"]}),
+    CompanyConfig("浦发银行", "spdb", "https://job.spdb.com.cn"),
+    CompanyConfig("民生银行", "cmbc", "https://career.cmbc.com.cn"),
+    # 华夏银行 - 大易(wecruit)平台，需Playwright
+    CompanyConfig("华夏银行", "hotjob_pw", "https://hxb.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/social.html"),
+    # 兴业银行 - 自建SPA，需Playwright
+    CompanyConfig("兴业银行", "hotjob_pw", "https://job.cib.com.cn/portal/"),
+    # 招商银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("招商银行", "zhiye_pw", "https://cmbchina.zhiye.com/Social"),
+    # 交通银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("交通银行", "zhiye_pw", "https://bankcomm.zhiye.com/Social"),
+    # 邮储银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("邮储银行", "zhiye_pw", "https://psbc.zhiye.com/Social"),
+    # 工商银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("工商银行", "zhiye_pw", "https://icbc.zhiye.com/Social"),
+    # 农业银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("农业银行", "zhiye_pw", "https://abchina.zhiye.com/Social"),
+    # 建设银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("建设银行", "zhiye_pw", "https://ccb.zhiye.com/Social"),
+    # 中国银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("中国银行", "zhiye_pw", "https://boc.zhiye.com/Social"),
+    # 光大银行 - 瑞数WAF + React SPA，需Playwright
+    CompanyConfig("光大银行", "hotjob_pw", "https://eoap.cebbank.com/uiap/wt/CEB/zpzh/social"),
+    # 广发银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("广发银行", "zhiye_pw", "https://cgbchina.zhiye.com/Social"),
+    # 北京农商银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("北京农商银行", "zhiye_pw", "https://bjrcb.zhiye.com/Social"),
+    # 渤海银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("渤海银行", "zhiye_pw", "https://cbhb.zhiye.com/Social"),
+    # 恒丰银行 - 北森新版Portal SPA，需Playwright
+    CompanyConfig("恒丰银行", "zhiye_pw", "https://hfbank.zhiye.com/Social"),
+    # 北京银行 - 北森API，纯HTTP分页
+    CompanyConfig("北京银行", "zhiye", "https://bankofbeijing.zhiye.com"),
+    # 上海银行 - 北森API，纯HTTP分页
+    CompanyConfig("上海银行", "zhiye", "https://bosc.zhiye.com"),
+    # 长沙银行 - 北森API，纯HTTP分页（0-based）
+    CompanyConfig("长沙银行", "zhiye", "https://cscb.zhiye.com"),
 ]
 
 # Mokahr 平台企业（银行+研究机构）
