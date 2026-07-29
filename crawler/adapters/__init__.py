@@ -15,6 +15,7 @@ from adapters.cmbc import CmbcAdapter
 from adapters.jibe import JibeAdapter
 from adapters.phenom import PhenomAdapter
 from adapters.beisen import BeisenAdapter
+from adapters.hotjob_json import HotjobJsonAdapter
 from adapters.custom_pw import CustomPlaywrightAdapter
 
 # Playwright adapters (lazy import to avoid hard dependency)
@@ -42,6 +43,7 @@ ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "jibe": JibeAdapter,
     "phenom": PhenomAdapter,
     "beisen": BeisenAdapter,
+    "hotjob_json": HotjobJsonAdapter,
 }
 
 if _HAS_PLAYWRIGHT:
