@@ -263,6 +263,15 @@ SECURITIES_COMPANIES = [
     CompanyConfig("中信建投证券", "beisen", "https://csc108.zhiye.com"),
     CompanyConfig("国信证券", "beisen", "https://guosen.zhiye.com"),
     CompanyConfig("光大证券", "beisen", "https://ebscn.zhiye.com"),
+    CompanyConfig("方正证券", "beisen", "https://foundersc.zhiye.com"),
+    CompanyConfig("中金财富", "beisen", "https://ciccwm.zhiye.com"),
+    # Phase 11: 国资控股扩展（beisen + hotjob_json）
+    CompanyConfig("中国交建", "beisen", "https://ccccltd.zhiye.com"),
+    CompanyConfig("保利发展", "beisen", "https://polycn.zhiye.com"),
+    CompanyConfig("中国再保险", "beisen", "https://chinare.zhiye.com"),
+    CompanyConfig("中国长城资产", "beisen", "https://gwamcc.zhiye.com"),
+    CompanyConfig("中国东方资产", "beisen", "https://coamc.zhiye.com"),
+    CompanyConfig("中国五矿", "hotjob_json", "https://www.hotjob.cn/wt/minmetals/web/index", {"su_id": "minmetals"}),
 ]
 
 # 更新汇总
