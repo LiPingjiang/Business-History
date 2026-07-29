@@ -44,6 +44,10 @@ def crawl_all(companies: list[CompanyConfig]) -> list[CrawlResult]:
             adapter = get_adapter(company.adapter)
 
         result = adapter.crawl(company)
+        # Inject source_type from company config into each job
+        if result.success and result.jobs:
+            for job in result.jobs:
+                job.source_type = company.source_type
         results.append(result)
 
         if result.success:

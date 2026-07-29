@@ -33,6 +33,7 @@ class CompanyConfig:
     adapter: str           # adapter名称
     url: str               # 招聘页面URL
     params: dict = field(default_factory=dict)  # adapter特定参数
+    source_type: str = ""  # "official" or "third_party:平台名"
 
 
 # ============================================================
@@ -276,3 +277,22 @@ SECURITIES_COMPANIES = [
 
 # 更新汇总
 ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES + YANGQI_EXPANSION + WORKDAY_EXPANSION + SECURITIES_COMPANIES
+
+
+# Auto-fill source_type based on URL patterns
+_THIRD_PARTY_URL_PATTERNS = {
+    'zhiye.com': 'third_party:北森智聘',
+    'myworkdayjobs.com': 'third_party:Workday',
+    'hotjob.cn': 'third_party:前程无忧',
+    'mokahr.com': 'third_party:Moka',
+    'smartrecruiters': 'third_party:SmartRecruiters',
+    'jobs.lever.co': 'third_party:Lever',
+}
+
+for _c in ALL_COMPANIES:
+    if not _c.source_type:
+        _c.source_type = 'official'  # default
+        for _pattern, _stype in _THIRD_PARTY_URL_PATTERNS.items():
+            if _pattern in _c.url:
+                _c.source_type = _stype
+                break
