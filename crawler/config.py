@@ -233,6 +233,13 @@ WORKDAY_EXPANSION = [
     # === Phase 7: 央企扩展 (beisen adapter) ===
     CompanyConfig("中国联通社招", "beisen", "https://chinaunicom.zhiye.com"),
     CompanyConfig("中国航天科工", "zhiye_pw", "https://casic.zhiye.com"),
+    # === Phase 8: 央企扩展 (beisen + Playwright) ===
+    CompanyConfig("招商局集团", "beisen", "https://cmhk.zhiye.com"),
+    CompanyConfig("中国石化", "custom_pw", "https://job.sinopec.com"),
+    CompanyConfig("中国华能", "custom_pw", "https://zhaopin.chng.com.cn"),
+    CompanyConfig("中国南方电网", "custom_pw", "https://zhaopin.csg.cn"),
+    CompanyConfig("中国大唐", "custom_pw", "https://zhaopin.china-cdt.com"),
+
 
 ]
 
