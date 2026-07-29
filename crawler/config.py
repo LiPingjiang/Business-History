@@ -34,6 +34,8 @@ class CompanyConfig:
     url: str               # 招聘页面URL
     params: dict = field(default_factory=dict)  # adapter特定参数
     source_type: str = ""  # "official" or "third_party:平台名"
+    official_url: str = ""  # 企业官网招聘页面（用于对比/备用）
+    status: str = "active"  # "active", "dead", "suspended"
 
 
 # ============================================================
@@ -150,30 +152,41 @@ BANK_COMPANIES = [
     CompanyConfig("华夏银行", "hotjob_pw", "https://hxb.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/social.html"),
     # 兴业银行 - 自建SPA，需Playwright
     CompanyConfig("兴业银行", "hotjob_pw", "https://job.cib.com.cn/portal/"),
-    # 招商银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("招商银行", "zhiye_pw", "https://cmbchina.zhiye.com/Social"),
-    # 交通银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("交通银行", "zhiye_pw", "https://bankcomm.zhiye.com/Social"),
-    # 邮储银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("邮储银行", "zhiye_pw", "https://psbc.zhiye.com/Social"),
-    # 工商银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("工商银行", "zhiye_pw", "https://icbc.zhiye.com/Social"),
-    # 农业银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("农业银行", "zhiye_pw", "https://abchina.zhiye.com/Social"),
-    # 建设银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("建设银行", "zhiye_pw", "https://ccb.zhiye.com/Social"),
-    # 中国银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("中国银行", "zhiye_pw", "https://boc.zhiye.com/Social"),
+    # 招商银行 - zhiye.com已关闭(404)，官网career.cmbchina.com需Playwright
+    CompanyConfig("招商银行", "zhiye_pw", "https://cmbchina.zhiye.com/Social",
+                  official_url="https://career.cmbchina.com", status="dead"),
+    # 交通银行 - zhiye.com已关闭(404)，官网job.bankcomm.com需Playwright+legacy SSL
+    CompanyConfig("交通银行", "zhiye_pw", "https://bankcomm.zhiye.com/Social",
+                  official_url="https://job.bankcomm.com", status="dead"),
+    # 邮储银行 - zhiye.com已关闭(404)，官网psbc.com需Playwright
+    CompanyConfig("邮储银行", "zhiye_pw", "https://psbc.zhiye.com/Social",
+                  official_url="https://www.psbc.com/cn/grfw/rczp/", status="dead"),
+    # 工商银行 - zhiye.com已关闭(404)，官网job.icbc.com.cn需Playwright+legacy SSL
+    CompanyConfig("工商银行", "zhiye_pw", "https://icbc.zhiye.com/Social",
+                  official_url="https://job.icbc.com.cn", status="dead"),
+    # 农业银行 - zhiye.com已关闭(404)，官网career.abchina.com需Playwright+legacy SSL
+    CompanyConfig("农业银行", "zhiye_pw", "https://abchina.zhiye.com/Social",
+                  official_url="https://career.abchina.com", status="dead"),
+    # 建设银行 - zhiye.com已关闭(404)，官网job.ccb.com有API(NHR104)需legacy SSL
+    CompanyConfig("建设银行", "zhiye_pw", "https://ccb.zhiye.com/Social",
+                  official_url="https://job.ccb.com", status="dead"),
+    # 中国银行 - zhiye.com已关闭(404)，官网career.bankofchina.com需Playwright
+    CompanyConfig("中国银行", "zhiye_pw", "https://boc.zhiye.com/Social",
+                  official_url="https://career.bankofchina.com", status="dead"),
     # 光大银行 - 瑞数WAF + React SPA，需Playwright
     CompanyConfig("光大银行", "hotjob_pw", "https://eoap.cebbank.com/uiap/wt/CEB/zpzh/social"),
-    # 广发银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("广发银行", "zhiye_pw", "https://cgbchina.zhiye.com/Social"),
-    # 北京农商银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("北京农商银行", "zhiye_pw", "https://bjrcb.zhiye.com/Social"),
-    # 渤海银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("渤海银行", "zhiye_pw", "https://cbhb.zhiye.com/Social"),
-    # 恒丰银行 - 北森新版Portal SPA，需Playwright
-    CompanyConfig("恒丰银行", "zhiye_pw", "https://hfbank.zhiye.com/Social"),
+    # 广发银行 - zhiye.com已关闭(404)，官网cgbchina.com.cn返回500
+    CompanyConfig("广发银行", "zhiye_pw", "https://cgbchina.zhiye.com/Social",
+                  official_url="https://www.cgbchina.com.cn/Channel/16000100", status="dead"),
+    # 北京农商银行 - zhiye.com已关闭(404)，官网bjrcb.com招聘页404
+    CompanyConfig("北京农商银行", "zhiye_pw", "https://bjrcb.zhiye.com/Social",
+                  official_url="https://www.bjrcb.com", status="dead"),
+    # 渤海银行 - zhiye.com已关闭(404)，官网cbhb.com.cn可访问
+    CompanyConfig("渤海银行", "zhiye_pw", "https://cbhb.zhiye.com/Social",
+                  official_url="https://www.cbhb.com.cn/bhbank/S101/renCaiZhaoPin", status="dead"),
+    # 恒丰银行 - zhiye.com已关闭(404)，官网hfbank.com.cn返回412(WAF)
+    CompanyConfig("恒丰银行", "zhiye_pw", "https://hfbank.zhiye.com/Social",
+                  official_url="https://www.hfbank.com.cn/gywm/rczp/index.shtml", status="dead"),
     # 北京银行 - 北森API，纯HTTP分页
     CompanyConfig("北京银行", "zhiye", "https://bankofbeijing.zhiye.com"),
     # 上海银行 - 北森API，纯HTTP分页
@@ -201,11 +214,15 @@ ZHIYE_RESEARCH_COMPANIES = [
 # ============================================================
 
 YANGQI_EXPANSION = [
-    # zhiye.com 旧版Portal仍在线，可用zhiye_pw adapter
-    CompanyConfig("中国建筑", "zhiye_pw", "https://cscec.zhiye.com"),
-    CompanyConfig("中国船舶", "zhiye_pw", "https://cssc.zhiye.com"),
-    CompanyConfig("中国核工业", "zhiye_pw", "https://cnnc.zhiye.com"),
-    CompanyConfig("中国能建", "zhiye_pw", "https://ceec.zhiye.com"),
+    # zhiye.com 旧版Portal API已失效(302→404)，需切换到官网或标记dead
+    CompanyConfig("中国建筑", "zhiye_pw", "https://cscec.zhiye.com",
+                  official_url="https://hr.cscec.com", status="dead"),
+    CompanyConfig("中国船舶", "zhiye_pw", "https://cssc.zhiye.com",
+                  official_url="https://www.cssc.net.cn", status="dead"),
+    CompanyConfig("中国核工业", "zhiye_pw", "https://cnnc.zhiye.com",
+                  official_url="https://hr.cnnc.com.cn", status="dead"),
+    CompanyConfig("中国能建", "zhiye_pw", "https://ceec.zhiye.com",
+                  official_url="https://hr.ceec.net.cn", status="suspended"),
 ]
 
 # ============================================================
@@ -233,7 +250,8 @@ WORKDAY_EXPANSION = [
     # CompanyConfig("Honeywell", "honeywell_playwright", "https://careers.honeywell.com", params={"location": "Beijing"}),
     # === Phase 7: 央企扩展 (beisen adapter) ===
     CompanyConfig("中国联通社招", "beisen", "https://chinaunicom.zhiye.com"),
-    CompanyConfig("中国航天科工", "zhiye_pw", "https://casic.zhiye.com"),
+    CompanyConfig("中国航天科工", "zhiye_pw", "https://casic.zhiye.com",
+                  official_url="https://zhaopin.casic.cn", status="dead"),
     # === Phase 8: 央企扩展 (beisen + Playwright) ===
     CompanyConfig("招商局集团", "beisen", "https://cmhk.zhiye.com"),
     CompanyConfig("中国石化", "custom_pw", "https://job.sinopec.com"),

@@ -1,62 +1,28 @@
-"""Analyze all companies by data source type: third-party platform vs official website."""
+"""Analyze source_type breakdown and identify official vs third-party sources."""
+import sys
+sys.path.insert(0, '.')
 from config import ALL_COMPANIES
-from collections import Counter
-import re
 
-THIRD_PARTY_PLATFORMS = {
-    "zhiye.com": "北森智聘(zhiye.com)",
-    "workday": "Workday",
-    "smartrecruiters": "SmartRecruiters",
-    "hotjob": "前程无忧(51job/hotjob)",
-    "mokahr": "Moka",
-    "phenom": "Phenom",
-    "jibe": "Jibe(Google)",
-}
+third = [c for c in ALL_COMPANIES if "third_party" in c.source_type]
+official = [c for c in ALL_COMPANIES if c.source_type == "official"]
 
-results = {"third_party": [], "official": []}
+print(f"总企业数: {len(ALL_COMPANIES)}")
+print(f"官网直接爬取: {len(official)}")
+print(f"第三方平台爬取: {len(third)}")
+print()
 
-for c in ALL_COMPANIES:
-    url = c.url
-    platform = None
-    for key, name in THIRD_PARTY_PLATFORMS.items():
-        if key in url:
-            platform = name
-            break
-    
-    domain = ""
-    m = re.search(r'://([^/]+)', url)
-    if m:
-        domain = m.group(1)
-    
-    entry = {
-        "name": c.name,
-        "adapter": c.adapter,
-        "url": url,
-        "domain": domain,
-    }
-    
-    if platform:
-        entry["platform"] = platform
-        results["third_party"].append(entry)
-    else:
-        results["official"].append(entry)
+print("=== 第三方平台企业 ===")
+for c in sorted(third, key=lambda x: x.source_type):
+    print(f"  {c.name:<14} adapter={c.adapter:<12} source={c.source_type}")
 
-print("=" * 70)
-print(f"总计: {len(ALL_COMPANIES)} 个企业配置")
-print("=" * 70)
+print()
+print("=== 官网直接爬取企业 ===")
+for c in sorted(official, key=lambda x: x.adapter):
+    print(f"  {c.name:<14} adapter={c.adapter:<12} url={c.url[:50]}")
 
-print(f"\n【第三方招聘平台】{len(results['third_party'])} 家企业")
-print("-" * 70)
-platform_groups = {}
-for e in results["third_party"]:
-    platform_groups.setdefault(e["platform"], []).append(e)
-
-for platform, companies in sorted(platform_groups.items(), key=lambda x: -len(x[1])):
-    print(f"\n  {platform} ({len(companies)} 家):")
-    for c in sorted(companies, key=lambda x: x["name"]):
-        print(f"    {c['name']:<20} {c['domain']}")
-
-print(f"\n\n【公司官网/自建站】{len(results['official'])} 家企业")
-print("-" * 70)
-for c in sorted(results["official"], key=lambda x: x["name"]):
-    print(f"  {c['name']:<20} adapter={c['adapter']:<15} {c['domain']}")
+# Check which companies have official websites that differ from their crawl URL
+print()
+print("=== 需要对比官网 vs 第三方平台信息的企业 ===")
+print("(这些企业目前从第三方平台爬取，需要检查官网是否有独立招聘页面)")
+for c in third:
+    print(f"  {c.name}: 当前爬取={c.url[:60]}")

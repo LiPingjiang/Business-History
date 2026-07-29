@@ -99,13 +99,16 @@ def main():
         table.add_column("企业", style="cyan")
         table.add_column("Adapter")
         table.add_column("URL")
+        table.add_column("来源")
+        table.add_column("状态")
         for i, c in enumerate(ALL_COMPANIES, 1):
-            table.add_row(str(i), c.name, c.adapter, c.url[:60])
+            st = c.source_type[:20] if c.source_type else ""
+            table.add_row(str(i), c.name, c.adapter, c.url[:50], st, c.status)
         console.print(table)
         return
 
-    # 过滤企业
-    companies = ALL_COMPANIES
+    # 过滤企业（跳过dead/suspended站点）
+    companies = [c for c in ALL_COMPANIES if c.status == "active"]
     if args.adapter:
         companies = [c for c in ALL_COMPANIES if c.adapter == args.adapter]
         if not companies:
