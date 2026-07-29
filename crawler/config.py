@@ -230,6 +230,10 @@ WORKDAY_EXPANSION = [
     # 需要 Playwright（SPA/WAF）— 暂标记，后续实现
     # CompanyConfig("IBM", "ibm_playwright", "https://careers.ibm.com", params={"location": "Beijing"}),
     # CompanyConfig("Honeywell", "honeywell_playwright", "https://careers.honeywell.com", params={"location": "Beijing"}),
+    # === Phase 7: 央企扩展 (beisen adapter) ===
+    CompanyConfig("中国联通社招", "beisen", "https://chinaunicom.zhiye.com"),
+    CompanyConfig("中国航天科工", "zhiye_pw", "https://casic.zhiye.com"),
+
 ]
 
 # VMware 已被 Broadcom 收购，岗位合并到 Broadcom Workday
