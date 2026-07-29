@@ -32,11 +32,17 @@ def crawl_all(companies: list[CompanyConfig]) -> list[CrawlResult]:
     for i, company in enumerate(companies, 1):
         console.print(f"[{i}/{len(companies)}] {company.name} ({company.adapter})...", end=" ")
 
-        # 复用adapter实例
+        # 复用adapter实例 (非Playwright); Playwright adapter每次新建
         if company.adapter not in adapters_cache:
             adapters_cache[company.adapter] = get_adapter(company.adapter)
 
         adapter = adapters_cache[company.adapter]
+
+        # Playwright adapters: create fresh instance each time to avoid asyncio loop poisoning
+        from adapters.playwright_base import PlaywrightAdapter
+        if isinstance(adapter, PlaywrightAdapter):
+            adapter = get_adapter(company.adapter)
+
         result = adapter.crawl(company)
         results.append(result)
 
@@ -45,12 +51,15 @@ def crawl_all(companies: list[CompanyConfig]) -> list[CrawlResult]:
         else:
             console.print(f"[red]✗ {result.error[:60]}[/red]")
 
+        # Cleanup Playwright adapter after each company
+        if isinstance(adapter, PlaywrightAdapter):
+            adapter.close()
+
     # 关闭所有adapter
     for adapter in adapters_cache.values():
         adapter.close()
 
     return results
-
 
 def print_summary(results: list[CrawlResult]):
     """打印爬取摘要"""
