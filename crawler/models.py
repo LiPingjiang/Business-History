@@ -74,6 +74,7 @@ class Job:
     experience: str = ""
     tags: list[str] = field(default_factory=list)
     source_adapter: str = ""
+    source_type: str = ""  # "official" or "third_party:平台名"
     crawled_date: str = field(default_factory=lambda: date.today().isoformat())
 
     @property
