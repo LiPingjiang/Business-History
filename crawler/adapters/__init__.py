@@ -14,6 +14,7 @@ from adapters.spdb import SPDBAdapter
 from adapters.cmbc import CmbcAdapter
 from adapters.jibe import JibeAdapter
 from adapters.phenom import PhenomAdapter
+from adapters.beisen import BeisenAdapter
 
 # Playwright adapters (lazy import to avoid hard dependency)
 try:
