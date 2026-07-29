@@ -36,12 +36,55 @@ class PlaywrightAdapter(BaseAdapter):
         )
         return context.new_page()
 
+    def crawl(self, company: CompanyConfig) -> "CrawlResult":
+        """Override crawl to reset browser on failure to prevent asyncio loop poisoning."""
+        from models import CrawlResult
+        try:
+            jobs = self.fetch_jobs(company)
+            return CrawlResult(
+                adapter_name=self.name,
+                company=company.name,
+                success=True,
+                jobs=jobs,
+            )
+        except Exception as e:
+            self._reset_browser()
+            return CrawlResult(
+                adapter_name=self.name,
+                company=company.name,
+                success=False,
+                error=str(e),
+            )
+
+    def _reset_browser(self):
+        """Close and reset browser state after errors to prevent asyncio event loop corruption."""
+        try:
+            if self._browser:
+                self._browser.close()
+        except Exception:
+            pass
+        try:
+            if self._playwright:
+                self._playwright.stop()
+        except Exception:
+            pass
+        self._browser = None
+        self._playwright = None
+
     def close(self):
         super().close()
-        if self._browser:
-            self._browser.close()
-        if self._playwright:
-            self._playwright.stop()
+        try:
+            if self._browser:
+                self._browser.close()
+        except Exception:
+            pass
+        try:
+            if self._playwright:
+                self._playwright.stop()
+        except Exception:
+            pass
+        self._browser = None
+        self._playwright = None
 
     @abstractmethod
     def fetch_jobs(self, company: CompanyConfig) -> List[Job]:

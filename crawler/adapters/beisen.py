@@ -5,6 +5,9 @@ from config import CompanyConfig
 
 
 class BeisenAdapter:
+    def close(self):
+        pass
+
     """Adapter for beisen new-portal zhiye.com sites (e.g. chinaunicom.zhiye.com)"""
 
     def crawl(self, company: CompanyConfig) -> CrawlResult:

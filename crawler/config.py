@@ -239,6 +239,9 @@ WORKDAY_EXPANSION = [
     CompanyConfig("中国华能", "custom_pw", "https://zhaopin.chng.com.cn"),
     CompanyConfig("中国南方电网", "custom_pw", "https://zhaopin.csg.cn"),
     CompanyConfig("中国大唐", "custom_pw", "https://zhaopin.china-cdt.com"),
+    # === Phase 9: 三桶油 ===
+    CompanyConfig("中国石油", "custom_pw", "https://zhaopin.cnpc.com.cn"),
+    CompanyConfig("中国海油", "custom_pw", "https://cnooc.zhaopin.com"),
 
 
 ]
