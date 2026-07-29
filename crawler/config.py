@@ -250,5 +250,20 @@ WORKDAY_EXPANSION = [
 # IBM: careers.ibm.com 有 AWS WAF challenge (202)，需 Playwright
 # Honeywell: Oracle HCM SPA (ibqbjb.fa.ocs.oraclecloud.com)，需 Playwright
 
+# ============================================================
+# Phase 10: 券商扩展（hotjob_json + beisen）
+# ============================================================
+
+SECURITIES_COMPANIES = [
+    # hotjob.cn JSON API (无需Playwright)
+    CompanyConfig("华泰证券", "hotjob_json", "https://www.hotjob.cn/wt/HTSC/web/index", {"su_id": "HTSC"}),
+    CompanyConfig("兴业证券", "hotjob_json", "https://www.hotjob.cn/wt/xyzq/web/index", {"su_id": "xyzq"}),
+    CompanyConfig("中泰证券", "hotjob_json", "https://www.hotjob.cn/wt/zts/web/index", {"su_id": "zts"}),
+    # beisen/zhiye.com
+    CompanyConfig("中信建投证券", "beisen", "https://csc108.zhiye.com"),
+    CompanyConfig("国信证券", "beisen", "https://guosen.zhiye.com"),
+    CompanyConfig("光大证券", "beisen", "https://ebscn.zhiye.com"),
+]
+
 # 更新汇总
-ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES + YANGQI_EXPANSION + WORKDAY_EXPANSION
+ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES + YANGQI_EXPANSION + WORKDAY_EXPANSION + SECURITIES_COMPANIES
