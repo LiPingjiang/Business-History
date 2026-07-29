@@ -188,12 +188,47 @@ MOKAHR_COMPANIES = [
     CompanyConfig("苏商银行", "mokahr", "https://app.mokahr.com/social-recruitment/snb/45591"),
 ]
 
-# 汇总所有企业
 ZHIYE_RESEARCH_COMPANIES = [
     CompanyConfig("中科院自动化所", "zhiye", "https://casia.zhiye.com"),
     CompanyConfig("中金公司", "zhiye", "https://cicc.zhiye.com"),
     CompanyConfig("中国银河证券", "zhiye", "https://chinastock.zhiye.com"),
 ]
 
-# 汇总所有企业
-ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES
+
+# ============================================================
+# Phase 6: 央企扩展（zhiye_pw可复用 + 新发现平台）
+# ============================================================
+
+YANGQI_EXPANSION = [
+    # zhiye.com 旧版Portal仍在线，可用zhiye_pw adapter
+    CompanyConfig("中国建筑", "zhiye_pw", "https://cscec.zhiye.com"),
+    CompanyConfig("中国船舶", "zhiye_pw", "https://cssc.zhiye.com"),
+    CompanyConfig("中国核工业", "zhiye_pw", "https://cnnc.zhiye.com"),
+    CompanyConfig("中国能建", "zhiye_pw", "https://ceec.zhiye.com"),
+]
+
+# ============================================================
+# Phase 6b: 外企扩展（Workday平台 + 自建站）
+# ============================================================
+
+WORKDAY_EXPANSION = [
+    CompanyConfig("IBM", "workday", "https://ibm.wd5.myworkdayjobs.com/IBM_Careers",
+                  params={"location": "China"}),
+    CompanyConfig("Cisco", "workday", "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
+                  params={"location": "China"}),
+    CompanyConfig("AMD", "workday", "https://amd.wd1.myworkdayjobs.com/AMD",
+                  params={"location": "China"}),
+    CompanyConfig("Salesforce", "workday", "https://salesforce.wd12.myworkdayjobs.com/en/External_Career_Site",
+                  params={"location": "China"}),
+    CompanyConfig("VMware", "workday", "https://vmware.wd1.myworkdayjobs.com/VMware",
+                  params={"location": "China"}),
+    CompanyConfig("Honeywell", "workday", "https://honeywell.wd5.myworkdayjobs.com/careers",
+                  params={"location": "China"}),
+    CompanyConfig("ABB", "workday", "https://abb.wd3.myworkdayjobs.com/Careers",
+                  params={"location": "China"}),
+    CompanyConfig("Schneider Electric", "workday", "https://schneiderelectric.wd3.myworkdayjobs.com/SchneiderElectricCareers",
+                  params={"location": "China"}),
+]
+
+# 更新汇总
+ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES + YANGQI_EXPANSION + WORKDAY_EXPANSION
