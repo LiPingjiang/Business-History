@@ -12,6 +12,8 @@ from adapters.mokahr import MokahrAdapter
 from adapters.citicbank import CiticbankAdapter
 from adapters.spdb import SPDBAdapter
 from adapters.cmbc import CmbcAdapter
+from adapters.jibe import JibeAdapter
+from adapters.phenom import PhenomAdapter
 
 # Playwright adapters (lazy import to avoid hard dependency)
 try:
@@ -35,6 +37,8 @@ ADAPTER_REGISTRY: dict[str, type[BaseAdapter]] = {
     "citicbank": CiticbankAdapter,
     "spdb": SPDBAdapter,
     "cmbc": CmbcAdapter,
+    "jibe": JibeAdapter,
+    "phenom": PhenomAdapter,
 }
 
 if _HAS_PLAYWRIGHT:

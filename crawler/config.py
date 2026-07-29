@@ -208,27 +208,33 @@ YANGQI_EXPANSION = [
 ]
 
 # ============================================================
-# Phase 6b: 外企扩展（Workday平台 + 自建站）
+# Phase 6b: 外企扩展（多平台适配）
 # ============================================================
 
 WORKDAY_EXPANSION = [
-    CompanyConfig("IBM", "workday", "https://ibm.wd5.myworkdayjobs.com/IBM_Careers",
-                  params={"location": "China"}),
+    # Workday 可用
     CompanyConfig("Cisco", "workday", "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
-                  params={"location": "China"}),
-    CompanyConfig("AMD", "workday", "https://amd.wd1.myworkdayjobs.com/AMD",
                   params={"location": "China"}),
     CompanyConfig("Salesforce", "workday", "https://salesforce.wd12.myworkdayjobs.com/en/External_Career_Site",
                   params={"location": "China"}),
-    CompanyConfig("VMware", "workday", "https://vmware.wd1.myworkdayjobs.com/VMware",
+    CompanyConfig("Broadcom", "workday", "https://broadcom.wd1.myworkdayjobs.com/External_Career",
                   params={"location": "China"}),
-    CompanyConfig("Honeywell", "workday", "https://honeywell.wd5.myworkdayjobs.com/careers",
-                  params={"location": "China"}),
-    CompanyConfig("ABB", "workday", "https://abb.wd3.myworkdayjobs.com/Careers",
-                  params={"location": "China"}),
-    CompanyConfig("Schneider Electric", "workday", "https://schneiderelectric.wd3.myworkdayjobs.com/SchneiderElectricCareers",
-                  params={"location": "China"}),
+    # Jibe 平台 (Google Cloud Talent Solution)
+    CompanyConfig("AMD", "jibe", "https://careers.amd.com",
+                  params={"location": "Beijing"}),
+    CompanyConfig("Schneider Electric", "jibe", "https://careers.se.com",
+                  params={"location": "Beijing"}),
+    # Phenom People 平台
+    CompanyConfig("ABB", "phenom", "https://careers.abb",
+                  params={"location": "Beijing", "country_code": "cn"}),
+    # 需要 Playwright（SPA/WAF）— 暂标记，后续实现
+    # CompanyConfig("IBM", "ibm_playwright", "https://careers.ibm.com", params={"location": "Beijing"}),
+    # CompanyConfig("Honeywell", "honeywell_playwright", "https://careers.honeywell.com", params={"location": "Beijing"}),
 ]
+
+# VMware 已被 Broadcom 收购，岗位合并到 Broadcom Workday
+# IBM: careers.ibm.com 有 AWS WAF challenge (202)，需 Playwright
+# Honeywell: Oracle HCM SPA (ibqbjb.fa.ocs.oraclecloud.com)，需 Playwright
 
 # 更新汇总
 ALL_COMPANIES = WORKDAY_COMPANIES + ZHIYE_COMPANIES + HOTJOB_COMPANIES + CUSTOM_COMPANIES + SMARTRECRUITERS_COMPANIES + ZHIYE_COMPANIES_EXTRA + BANK_COMPANIES + MOKAHR_COMPANIES + ZHIYE_RESEARCH_COMPANIES + YANGQI_EXPANSION + WORKDAY_EXPANSION
