@@ -36,6 +36,7 @@ class CompanyConfig:
     source_type: str = ""  # "official" or "third_party:平台名"
     official_url: str = ""  # 企业官网招聘页面（用于对比/备用）
     status: str = "active"  # "active", "dead", "suspended"
+    display_name: str = ""  # 前端展示名称（与 COMPANY_CATALOG 对齐）
 
 
 # ============================================================
@@ -44,11 +45,14 @@ class CompanyConfig:
 
 WORKDAY_COMPANIES = [
     CompanyConfig("NVIDIA", "workday", "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="英伟达"),
     CompanyConfig("Intel", "workday", "https://intel.wd1.myworkdayjobs.com/External",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="英特尔"),
     CompanyConfig("HP", "workday", "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="惠普"),
     CompanyConfig("Adobe", "workday", "https://adobe.wd5.myworkdayjobs.com/external_experienced",
                   params={"location": "China"}),
     CompanyConfig("3M", "workday", "https://3m.wd1.myworkdayjobs.com/Search",
@@ -56,26 +60,33 @@ WORKDAY_COMPANIES = [
     CompanyConfig("GE Aerospace", "workday", "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite",
                   params={"location": "China"}),
     CompanyConfig("Pfizer", "workday", "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="辉瑞"),
     CompanyConfig("Red Hat", "workday", "https://redhat.wd5.myworkdayjobs.com/jobs",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="红帽"),
     CompanyConfig("Visa", "workday", "https://visa.wd5.myworkdayjobs.com/Visa",
                   params={"location": "China"}),
     CompanyConfig("Mastercard", "workday", "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="万事达卡"),
     CompanyConfig("Samsung SEC", "workday", "https://sec.wd3.myworkdayjobs.com/Samsung_Careers",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="三星"),
     CompanyConfig("Dell", "workday", "https://dell.wd1.myworkdayjobs.com/External",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="戴尔"),
     CompanyConfig("Shell", "workday", "https://shell.wd3.myworkdayjobs.com/ShellCareers",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="壳牌"),
 ]
 
 ZHIYE_COMPANIES = [
     # 航天科工 casic.zhiye.com 是旧版校招系统，无社招API，跳过
     # CompanyConfig("航天科工", "zhiye", "https://casic.zhiye.com", params={"type": "social"}),
     CompanyConfig("三星中国", "zhiye", "https://dearsamsung.zhiye.com",
-                  params={"type": "social"}),
+                  params={"type": "social"},
+                  display_name="三星"),
     CompanyConfig("联通数科", "zhiye", "https://cudt.zhiye.com",
                   params={"type": "social"}),
     CompanyConfig("联通数智", "zhiye", "https://cudataintelligence.zhiye.com",
@@ -90,13 +101,16 @@ HOTJOB_COMPANIES = [
     CompanyConfig("中国信通院", "hotjob_pw", "https://wecruit.hotjob.cn/SU642fbf5fbef57c1e269fa798/pb/social.html",
                   params={"su_id": "SU642fbf5fbef57c1e269fa798"}),
     CompanyConfig("中国华电", "hotjob_pw", "https://chd.hotjob.cn",
-                  params={"su_id": "chd"}),
+                  params={"su_id": "chd"},
+                  display_name="中国华电集团"),
     CompanyConfig("中国中车", "hotjob_pw", "https://crrc.hotjob.cn/SU64d47c466202cc36e27a52d4/pb/social.html",
-                  params={"su_id": "SU64d47c466202cc36e27a52d4"}),
+                  params={"su_id": "SU64d47c466202cc36e27a52d4"},
+                  display_name="中国中车集团"),
     CompanyConfig("一汽大众", "hotjob_pw", "https://faw-vw.hotjob.cn",
                   params={"su_id": "faw-vw"}),
     CompanyConfig("中化集团", "hotjob_pw", "https://sinochem.hotjob.cn",
-                  params={"su_id": "sinochem"}),
+                  params={"su_id": "sinochem"},
+                  display_name="中国中化控股"),
 ]
 
 # ============================================================
@@ -105,15 +119,20 @@ HOTJOB_COMPANIES = [
 
 CUSTOM_COMPANIES = [
     CompanyConfig("Amazon", "amazon", "https://www.amazon.jobs/en/search",
-                  params={"base_query": "data engineer", "loc_query": "Beijing, China"}),
+                  params={"base_query": "data engineer", "loc_query": "Beijing, China"},
+                  display_name="亚马逊"),
     CompanyConfig("Microsoft", "microsoft", "https://apply.careers.microsoft.com",
-                  params={"location": "Beijing"}),
+                  params={"location": "Beijing"},
+                  display_name="微软"),
     CompanyConfig("Siemens", "siemens", "https://jobs.siemens.com.cn/siemens/position/index",
-                  params={"recruitmentType": "SOCIALRECRUITMENT"}),
+                  params={"recruitmentType": "SOCIALRECRUITMENT"},
+                  display_name="西门子"),
     CompanyConfig("BMW/领悦", "bmw", "https://careersite.tupu360.com/bmw/position/index",
-                  params={"recruitmentType": "SOCIALRECRUITMENT"}),
+                  params={"recruitmentType": "SOCIALRECRUITMENT"},
+                  display_name="宝马"),
     CompanyConfig("AstraZeneca", "astrazeneca", "https://careers.astrazeneca.com/search-jobs",
-                  params={"keywords": "data", "location": "Beijing, China"}),
+                  params={"keywords": "data", "location": "Beijing, China"},
+                  display_name="阿斯利康"),
 ]
 
 # ============================================================
@@ -205,7 +224,8 @@ MOKAHR_COMPANIES = [
 ZHIYE_RESEARCH_COMPANIES = [
     CompanyConfig("中科院自动化所", "zhiye", "https://casia.zhiye.com"),
     CompanyConfig("中金公司", "zhiye", "https://cicc.zhiye.com"),
-    CompanyConfig("中国银河证券", "zhiye", "https://chinastock.zhiye.com"),
+    CompanyConfig("中国银河证券", "zhiye", "https://chinastock.zhiye.com",
+                  display_name="中国银河金融控股"),
 ]
 
 
@@ -218,11 +238,13 @@ YANGQI_EXPANSION = [
     CompanyConfig("中国建筑", "zhiye_pw", "https://cscec.zhiye.com",
                   official_url="https://hr.cscec.com", status="dead"),
     CompanyConfig("中国船舶", "zhiye_pw", "https://cssc.zhiye.com",
-                  official_url="https://www.cssc.net.cn", status="dead"),
+                  official_url="https://www.cssc.net.cn", status="dead",
+                  display_name="中国船舶集团"),
     CompanyConfig("中国核工业", "zhiye_pw", "https://cnnc.zhiye.com",
                   official_url="https://hr.cnnc.com.cn", status="dead"),
     CompanyConfig("中国能建", "zhiye_pw", "https://ceec.zhiye.com",
-                  official_url="https://hr.ceec.net.cn", status="suspended"),
+                  official_url="https://hr.ceec.net.cn", status="suspended",
+                  display_name="中国能源建设集团"),
 ]
 
 # ============================================================
@@ -232,16 +254,19 @@ YANGQI_EXPANSION = [
 WORKDAY_EXPANSION = [
     # Workday 可用
     CompanyConfig("Cisco", "workday", "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="思科"),
     CompanyConfig("Salesforce", "workday", "https://salesforce.wd12.myworkdayjobs.com/en/External_Career_Site",
                   params={"location": "China"}),
     CompanyConfig("Broadcom", "workday", "https://broadcom.wd1.myworkdayjobs.com/External_Career",
-                  params={"location": "China"}),
+                  params={"location": "China"},
+                  display_name="博通"),
     # Jibe 平台 (Google Cloud Talent Solution)
     CompanyConfig("AMD", "jibe", "https://careers.amd.com",
                   params={"location": "Beijing"}),
     CompanyConfig("Schneider Electric", "jibe", "https://careers.se.com",
-                  params={"location": "Beijing"}),
+                  params={"location": "Beijing"},
+                  display_name="施耐德电气"),
     # Phenom People 平台
     CompanyConfig("ABB", "phenom", "https://careers.abb",
                   params={"location": "Beijing", "country_code": "cn"}),
@@ -251,16 +276,22 @@ WORKDAY_EXPANSION = [
     # === Phase 7: 央企扩展 (beisen adapter) ===
     CompanyConfig("中国联通社招", "beisen", "https://chinaunicom.zhiye.com"),
     CompanyConfig("中国航天科工", "zhiye_pw", "https://casic.zhiye.com",
-                  official_url="https://zhaopin.casic.cn", status="dead"),
+                  official_url="https://zhaopin.casic.cn", status="dead",
+                  display_name="中国航天科工集团"),
     # === Phase 8: 央企扩展 (beisen + Playwright) ===
     CompanyConfig("招商局集团", "beisen", "https://cmhk.zhiye.com"),
-    CompanyConfig("中国石化", "custom_pw", "https://job.sinopec.com"),
-    CompanyConfig("中国华能", "custom_pw", "https://zhaopin.chng.com.cn"),
+    CompanyConfig("中国石化", "custom_pw", "https://job.sinopec.com",
+                  display_name="中国石油化工集团"),
+    CompanyConfig("中国华能", "custom_pw", "https://zhaopin.chng.com.cn",
+                  display_name="中国华能集团"),
     CompanyConfig("中国南方电网", "custom_pw", "https://zhaopin.csg.cn"),
-    CompanyConfig("中国大唐", "custom_pw", "https://zhaopin.china-cdt.com"),
+    CompanyConfig("中国大唐", "custom_pw", "https://zhaopin.china-cdt.com",
+                  display_name="中国大唐集团"),
     # === Phase 9: 三桶油 ===
-    CompanyConfig("中国石油", "custom_pw", "https://zhaopin.cnpc.com.cn"),
-    CompanyConfig("中国海油", "custom_pw", "https://cnooc.zhaopin.com"),
+    CompanyConfig("中国石油", "custom_pw", "https://zhaopin.cnpc.com.cn",
+                  display_name="中国石油天然气集团"),
+    CompanyConfig("中国海油", "custom_pw", "https://cnooc.zhaopin.com",
+                  display_name="中国海洋石油集团"),
 
 
 ]
@@ -285,12 +316,15 @@ SECURITIES_COMPANIES = [
     CompanyConfig("方正证券", "beisen", "https://foundersc.zhiye.com"),
     CompanyConfig("中金财富", "beisen", "https://ciccwm.zhiye.com"),
     # Phase 11: 国资控股扩展（beisen + hotjob_json）
-    CompanyConfig("中国交建", "beisen", "https://ccccltd.zhiye.com"),
-    CompanyConfig("保利发展", "beisen", "https://polycn.zhiye.com"),
+    CompanyConfig("中国交建", "beisen", "https://ccccltd.zhiye.com",
+                  display_name="中国交通建设集团"),
+    CompanyConfig("保利发展", "beisen", "https://polycn.zhiye.com",
+                  display_name="中国保利集团"),
     CompanyConfig("中国再保险", "beisen", "https://chinare.zhiye.com"),
     CompanyConfig("中国长城资产", "beisen", "https://gwamcc.zhiye.com"),
     CompanyConfig("中国东方资产", "beisen", "https://coamc.zhiye.com"),
-    CompanyConfig("中国五矿", "hotjob_json", "https://www.hotjob.cn/wt/minmetals/web/index", {"su_id": "minmetals"}),
+    CompanyConfig("中国五矿", "hotjob_json", "https://www.hotjob.cn/wt/minmetals/web/index", {"su_id": "minmetals"},
+                  display_name="中国五矿集团"),
 ]
 
 # 更新汇总
