@@ -1,0 +1,37 @@
+[Fri Aug  7 09:00:03 CST 2026] Starting daily crawl...
+Traceback (most recent call last):
+  File "/Users/pingjiangli/Code/Business-History/crawler/runner.py", line 20, in <module>
+    from adapters import get_adapter, ADAPTER_REGISTRY
+  File "/Users/pingjiangli/Code/Business-History/crawler/adapters/__init__.py", line 19, in <module>
+    from adapters.custom_pw import CustomPlaywrightAdapter
+  File "/Users/pingjiangli/Code/Business-History/crawler/adapters/custom_pw.py", line 6, in <module>
+    from adapters.playwright_base import PlaywrightAdapter
+  File "/Users/pingjiangli/Code/Business-History/crawler/adapters/playwright_base.py", line 8, in <module>
+    from playwright.sync_api import sync_playwright, Page, Browser
+ModuleNotFoundError: No module named 'playwright'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	crawler/logs/2026-07-31.log
+	crawler/logs/2026-08-01.log
+	crawler/logs/2026-08-02.log
+	crawler/logs/2026-08-03.log
+	crawler/logs/2026-08-04.log
+	crawler/logs/2026-08-05.log
+	crawler/logs/2026-08-06.log
+	crawler/logs/2026-08-07.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+To github.com:LiPingjiang/Business-History.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:LiPingjiang/Business-History.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[Fri Aug  7 09:00:08 CST 2026] Syncing to cloud...
+[sync] Done at Fri Aug  7 09:00:08 CST 2026
+[Fri Aug  7 09:00:08 CST 2026] Daily crawl completed.
