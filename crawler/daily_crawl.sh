@@ -9,7 +9,7 @@ LOG_FILE=$LOG_DIR/$DATE.log
 echo "[$(date)] Starting daily crawl..." >> $LOG_FILE
 
 # 全量爬取
-python3 runner.py --diff >> $LOG_FILE 2>&1
+/usr/local/bin/python3 runner.py --diff >> $LOG_FILE 2>&1
 
 # git push结果
 cd /Users/pingjiangli/Code/Business-History
