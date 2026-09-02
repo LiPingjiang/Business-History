@@ -163,7 +163,7 @@ ZHIYE_COMPANIES_EXTRA = [
 
 # 北京银行已在 ZHIYE_COMPANIES 中（bankofbeijing.zhiye.com）
 BANK_COMPANIES = [
-    CompanyConfig("银行C", "recruitportal", "https://internal://bank-c",
+    CompanyConfig("银行C", "recruitportal", "internal://bank-c",
                   params={"workAddr": ["110000"]}),
     CompanyConfig("浦发银行", "spdb", "https://job.spdb.com.cn"),
     CompanyConfig("民生银行", "cmbc", "https://career.cmbc.com.cn"),
