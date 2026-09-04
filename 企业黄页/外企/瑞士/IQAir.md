@@ -56,6 +56,7 @@
 | **美国** | 核心市场。2008 年起美国奥委会官方供应商，北美总部位于加州 La Mirada。野火季 AirVisual 排名（2023 年"纽约全球污染最重城市"）被主流媒体广泛引用；2026 年 7 月加拿大野火期间 App 飙升至 App Store 天气类第 2。Trustpilot 总体正面但有售后投诉（机身开裂处理拖延等）。北美 CEO Glory Dolphin Hammes 为美国最年轻 CEO 之一。 |
 | **德国** | 生产基地（南部 Wangen）+ Stiftung Warentest 测评背书，但消费市场被飞利浦、Dyson、Levoit、小米、Bosch、Blueair、Coway 等中低价位品牌主导，IQAir 几乎不在大众消费讨论中。 |
 | **法国** | 存在感弱且有数据公信力争议（见"争议"节）。法国空净市场 2020 年约 0.8–1 亿欧元（FIMEA），预计 2030 年最多 5 亿欧元，由 Dyson、飞利浦、SEB/Rowenta、小米、Honeywell 主导。 |
+| **其他欧洲国家（意/西/荷/波/捷/匈/土/俄/乌/希/芬等，2026 年 9 月当地语言搜索）** | 普遍存在官方语言子站（iqair.it / .es / .pt / .pl / .cz / .hu / .ru 等），但消费声量极低：意大利 Trovaprezzo 比价与 Top10 榜单以 Bosch 等中低价品牌为主；西班牙测评以亚马逊渠道导向；荷兰由过敏护理垂直电商（Allergiezorg/Allergieshop/intimus）和 Interfilter 经销，主打医院/研究机构 B 端叙事；波兰 Allegro 有在售 + Interfilter 经销；捷克代理商主打"布拉格/俄斯特拉发污染区 + 超细颗粒物不被官方测量"的焦虑营销；匈牙利 eMAG 在售 + 布达佩斯经销商；土耳其称"产品全部瑞士制造"（与德国工厂并存的叙事）；俄罗斯/乌克兰在 Yandex Market、OZON、Rozetka、Prom 等本土电商均有官方渠道在售（俄乌冲突下业务仍存续）；希腊 Skroutz 比价平台收录。总体规律：**欧洲各国均为小众高端定位，渠道模式分两类——德法荷走"医疗/B 端专业经销商"，东欧南欧走"本土电商平台 + 代理商"，无任何一国进入大众消费主流**。北欧（瑞典/芬兰）测评生态完全不提及 IQAir，仅专业渠道（如芬兰 Sisäilmalähetti）出租/出售给机构客户。 |
 | **印度** | 以数据平台而非产品存在：AirVisual 是印度媒体引用空气数据的主要来源，《2025 世界空气质量报告》列印度为全球第 6 污染国、Loni 为全球最污染城市、新德里蝉联最污染首都，该报告已成为印度公务员考试（UPSC）备考机构的标准解析素材。净化器业务被本土低价品牌挤压。 |
 | **日本** | 大众认知度低（日语搜索被烟草产品 IQOS 淹没，iqair.co.jp 独立域名连接被拒，主站设日语版 iqair.com/jp）。有本地经销网络：株式会社双葉メディカル（医疗设备商，经销 CleanRoom 250 等医用型号）与オカダGAJ 等专业代理；亚马逊日本在售（AirVisual 监测仪套装 ¥146,121，V5-Cell 滤芯 ¥27,479 且有 1057 条评价——显示日本存在一个稳定的小众医疗/专业市场）。日方渠道资料将 SARS 时期香港医管局采购作为主要背书。本土夏普、松下、大金强势，IQAir 定位小众高端进口品牌。 |
 | **韩国** | 数据平台被广泛引用（首尔 55 个市政监测站数据聚合，2024/2025 年均 PM2.5 约 18.3 µg/m³），产品份额极小（Coway、三星、LG 主导）。 |
@@ -108,4 +109,4 @@
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*
 
-*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。调研时间：2026 年 9 月。*
+*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。调研时间：2026 年 9 月（含欧洲 13 语种补搜：意/西/荷/波/瑞典/芬/葡/捷/匈/土/俄/乌/希腊）。*
