@@ -69,6 +69,30 @@ AirVisual 十一年走完了一条经典路径：**创业者自研（2010–2015
 
 三层结构：其一，硬件销售——2016 年 Indiegogo 众筹 AirVisual Node 室内 PM2.5/CO₂ 监测仪（众筹价约 150–200 美元，零售约 229 美元）为主收入；其二，免费 App + 众包数据网络——每台售出设备接入监测网络，用户既是消费者也是数据贡献者；其三，基于众包数据与机器学习的空气预报及数据服务。本质是“卖硬件建网络、靠网络养数据、靠数据抬品牌”的物联网创业模型。收购后创始人 Yann Boquillod 留任掌管 AirVisual 业务。
 
+### 团队情况（侧写）
+
+内部员工无法直接观察：收购后 AirVisual 不再是独立法人/独立领英公司页，招聘与员工资料全部归入 IQAir（Goldach 总部）名下，团队规模无任何单独披露，只能拼侧写：
+
+- **关键人物**：创始人 Yann Boquillod 收购后留任，头衔为 “IQAir Director of Air Quality Monitoring”（LinkedIn/ZoomInfo 口径）。其人设是“住在中国的连续创业者”——电信与大数据背景，自称 living in Beijing, the AI hub of China，常住三里屯（2021 年 1 月在 Beijing Tech Temple 的 Startup Grind 线下活动担任主讲）。2023 年 4 月仍以 AirVisual 创始人身份出席加州 Air Sensors International Conference——收购六年后仍是该业务的门面人物，未离职。
+- **AirVisual 时代（2015–2017）**：典型初创小团队，北京 + 香港两地办公（Indiegogo 众筹体量 + 创始人北京自研起家可佐证）。收购后从“公司”变“部门”，其人数隐没于 Goldach 总部（瑞士）与北京实体中。
+- **数据噪音（不采信，仅存证）**：RocketReach 残留一条 “AirVisual” 独立公司记录（纽约、4 名员工、营收约 5,700 万元、联系人 Tom Hansen）；Tracxn 称创始人为 Tom Hansen——两条互相矛盾且与瑞士/北京历史完全不符，判定为数据商抓取残留/错误。Growjo “IQAir AirVisual” 口径称 Goldach 200+ 人、营收约 2.9 亿元——算法估算，与 Revelio Labs 全球 296 人口径冲突，同样不采信。
+- **结论**：AirVisual 的真实团队体量大概率是**十人级的数据/工程小组**（嵌入 Goldach 总部 + 北京），而非数据商渲染的百人级独立公司；这与其“获客与品牌资产”定位相符。
+
+### 研发路径的历年变化
+
+依据 IQAir 官方数据校准文档、技术文章与产品迭代反推：
+
+| 阶段 | 时期 | 技术路径 |
+|------|------|----------|
+| 前史 | 2010–2014 | Yann 在北京个人自研，聚合公开监测站数据，无自有硬件 |
+| 单机时代 | 2015–2016 | AirVisual Node 硬件（激光散射颗粒物传感器 + NDIR CO₂）+ App 上架（2015-11 Google Play）；预报为基础统计/机器学习模型；众包网络起步 |
+| 云端校准时代 | 2017–2019 | 收购后推 AirVisual Pro；校准算法上云，AI/ML 综合湿度等环境参数与区域历史模式；聚合官方参考站 + 自有传感器 + 气象数据三类来源 |
+| 深度学习预报 | 2020–2021 | 官方称预报为“深度机器学习的闭环反馈控制系统”；疫情与山火期日增数十亿数据点，网络规模反哺模型 |
+| 多源融合升级 | 2021–2023 | 校准体系纳入卫星影像的污染组分反演；AirVisual Outdoor 八参数社区站、API 与企业级数据服务产品化 |
+| 维护期 | 2024–2026 | Android 最后一次大版本更新为 2024-10；App 月收入约 2.7 万元人民币量级，研发投入退坡，转向数据资产运营 |
+
+演变的本质：研发重心沿“硬件 + 基础预报 → 云 AI 校准 → 卫星/气象多源融合 → 维护运营”迁移，每一步都由数据规模驱动（自研数据 → 众包数据 → 多源融合），符合物联网数据平台从建设期到收割期的典型曲线。对 IQAir 而言，AirVisual 的研发产出最终沉淀为品牌与获客资产，而非独立利润中心。
+
 ## 全球市场格局
 
 公司不公布任何财务与分地区营收数据。全球员工数：2020 年约 500 人（Handelszeitung）→ 2026 年 3 月约 296 人（Revelio Labs 口径，含关联实体，同比微增 1.1%）——整体也呈收缩后企稳态势。可确认的经营重心：**硬件（净化器）重心在中国与北美，数据平台（AirVisual）是全球性公共影响力与获客入口，欧洲本土反而是"灯下黑"——有工厂与测评背书但消费认知薄弱**（德语、法语维基百科均无 IQAir 条目）。
@@ -184,4 +208,4 @@ IQAir 为不上市的家族企业，从不公布营收与分地区销售数据�
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*
 
-*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。销售侧写补充来源（2026-09-20 追加）：Similarweb（iqair.com 流量与国别分布）、亚马逊美/日站评论量、RocketReach/Growjo/AllBiz（营收估计）、Companies House（SWISS IQAIR GROUP HOLDINGS LIMITED 09222089）、加州企业登记（1991-11-26）、Google Play（AirVisual 下载量）、企查查招投标记录、百度百科（累计客户口径、前总代理睿博美佳）、中关村在线（直营十周年、进博会珐琅臻彩专访）、印度空净市场报告。调研时间：2026 年 9 月（含欧洲 13 语种补搜：意/西/荷/波/瑞典/芬/葡/捷/匈/土/俄/乌/希腊）。*
+*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。销售侧写补充来源（2026-09-20 追加）：Similarweb（iqair.com 流量与国别分布）、亚马逊美/日站评论量、RocketReach/Growjo/AllBiz（营收估计）、Companies House（SWISS IQAIR GROUP HOLDINGS LIMITED 09222089）、加州企业登记（1991-11-26）、Google Play（AirVisual 下载量）、企查查招投标记录、百度百科（累计客户口径、前总代理睿博美佳）、中关村在线（直营十周年、进博会珐琅臻彩专访）、印度空净市场报告。团队与研发路径补充来源（2026-09-20 追加）：LinkedIn/ZoomInfo（Yann Boquillod 头衔）、aifortheplanet.org 与 Startup Grind 北京（创始人履历）、Air Sensors International Conference 2023、IQAir 官方数据校准文档（AI/ML 云校准、卫星反演）、AirVisual Deep Machine Learning 技术文章、Free APK Archive（App 2015-11 上架佐证）、Google Play 版本历史（最后大版本更新 2024-10）、RocketReach/Tracxn/Growjo（仅作数据噪音存证）。调研时间：2026 年 9 月（含欧洲 13 语种补搜：意/西/荷/波/瑞典/芬/葡/捷/匈/土/俄/乌/希腊）。*
