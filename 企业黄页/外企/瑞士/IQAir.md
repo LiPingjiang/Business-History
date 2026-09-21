@@ -89,6 +89,23 @@ AirVisual 十一年走完了一条经典路径：**创业者自研（2010–2015
 
 **趋势警示：** 三个月流量环比 -17.68%，全球排名从 #4,971 跌至 #5,855——事件间歇期影响力自然衰减，且无北美野火时缺乏自主增长引擎。AirVisual 的获客本质是“天气型生意”：需求由灾难驱动，与净化器销售同频共振，但在风平浪静的年份里，它是成本中心而非增长引擎。
 
+### 竞品格局与横向对比（2026）
+
+背景：平台型玩家正在被巨头吸收——Google 2022-09 以约 2–2.25 亿美元（约 14–16 亿元人民币）收购以色列 BreezoMeter（模型派：无自有传感器，AI 融合官方站+交通+气象，原商业模式是 B2B API 授权），收购后变成 Google Maps Platform 的 Air Quality / Pollen / Solar 三个环境 API，免费额度+按量计费，空气质量能力直接进入谷歌搜索与地图；AccuWeather 2022-01（2021-12 交割）收购巴黎 Plume Labs（AI/ML 全球预报 + Flow 个人传感器），成为其“气候与环境数据中心”，借助 AccuWeather 触达 15 亿人的分发能力。两者都指向同一趋势：**空气质量数据的终局是“操作系统/天气巨头内置能力”，独立 App 品牌被吸收**。
+
+| 玩家 | 背景/归属 | 数据方法 | 影响力 | 商业模式 | 对 AirVisual 的替代性 |
+|------|-----------|----------|--------|----------|------------------|
+| **AirVisual（IQAir）** | 瑞士私企，2017 收购 | 官方站+8 万自有传感器+卫星反演，AI 云校准 | 事实标准：900 万下载、全球媒体引用、年度世界报告 | 获客/品牌资产+硬件销售+API | —— |
+| **BreezoMeter** | Google（2022，约 14–16 亿元） | 纯模型：官方站+交通+气象+沙尘 wildfire 模型，无自有传感器 | 品牌消失，嵌入谷歌搜索/地图/Nest，覆盖量级最大 | 已并入 Google Maps Platform API 计费 | **消费端最危险**：OS/搜索层默认数据源，用户无需下载 App |
+| **Plume Labs** | AccuWeather（2022-01） | AI/ML 全球预报模型，曾有 Flow 个人传感器 | 品牌淡化，随 AccuWeather 天气内容分发（15 亿人触达） | 并入 AccuWeather 企业数据服务 | 企业/媒体场景部分替代；公众端依赖宿主分发 |
+| **AQICN/WAQI** | 非营利项目（2007 年起） | 纯聚合：50 万+官方监测站，无自有传感器无校准模型 | 亚洲事实上的免费默认源；亚洲流量长期高于 iqair.com | 非营利，免费，无营收压力 | **成本替代**：重度用户交叉验证的免费选项；无媒体叙事（不发布报告/排名） |
+| **PurpleAir** | 美国犹他州私营，约 8–9 人、营收约 2,800 万元 | 众包传感器销售：数万台低成本激光传感器，2 分钟刷新 | 北美野火季媒体第二引用源（EPA 已接入其数据） | 卖传感器（硬件即网络） | **数据层替代**：美国国内社区级实时性最强；全球覆盖弱 |
+| **Airly** | 波兰克拉科夫，融资约 4,500–7,700 万元，约 38–45 人 | 自有传感器网络（城市/学校部署）+SaaS 平台 | 欧洲城市端（尤其中东欧）有 B 端声量 | ARR 约 1,100 万元（2024），城市/企业订阅 | B 端智慧城市场景替代，无大众影响力 |
+| **Ambee** | 印度班加罗尔，融资约 3,100 万元 | 自有传感器+模型融合，花粉/野火/气象多品类 | B 端 API 市场竞品，无公众存在 | 企业 API 订阅 | API 商业化正面竞争；分发与品牌远弱 |
+| **OpenAQ / EPA AirNow** | 非营利 / 美国政府 | 官方数据聚合 | 科研/政策圈层 | 免费/财政支持 | 数据源替代；无消费产品、无商业引擎 |
+
+**格局结论：** ① **消费端三明治挤压**——底层是免费非营利 AQICN（亚洲默认）+官方源，顶层是谷歌/苹果/天气 App 的 OS 级内置（苹果天气自带空气质量层），AirVisual 被夹在中间，靠“全球排名+年度报告”的媒体叙事维持品牌溢价，这是它唯一未被复制的资产；② **B 端 API 面临谷歌正面碾压**——Google Maps Platform 环境背靠地图开发者生态，Ambee/Airly/IQAir API 在分发上均处于劣势，但 IQAir 的 8 万自有传感器网络在数据原创性上是谷歌模型派没有的护城河；③ **估值锚点**——BreezoMeter（无自有传感器的纯模型公司）卖了约 14–16 亿元，倒推看 IQAir 当年收购 AirVisual 的价格策略：买的不是数据能力而是“事实标准”地位，这个地位至今仍在产生免费流量；④ **替代性时序**——短期（1–3 年）无人能撼动“according to IQAir”的媒体习惯，中期最大风险是谷歌把空气质量做进搜索默认卡片后，新一代用户不再需要独立 App，这与其 Android 端 2024-10 后进入维护态的节奏相互印证。
+
 ### 研发路径的历年变化
 
 依据 IQAir 官方数据校准文档、技术文章与产品迭代反推：
@@ -219,4 +236,4 @@ IQAir 为不上市的家族企业，从不公布营收与分地区销售数据�
 
 *本条目为《企业史》企业黄页的一部分。[返回总目录](../../企业黄页总目录.md)*
 
-*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。销售侧写补充来源（2026-09-20 追加）：Similarweb（iqair.com 流量与国别分布）、亚马逊美/日站评论量、RocketReach/Growjo/AllBiz（营收估计）、Companies House（SWISS IQAIR GROUP HOLDINGS LIMITED 09222089）、加州企业登记（1991-11-26）、Google Play（AirVisual 下载量）、企查查招投标记录、百度百科（累计客户口径、前总代理睿博美佳）、中关村在线（直营十周年、进博会珐琅臻彩专访）、印度空净市场报告。团队与研发路径补充来源（2026-09-20 追加）：LinkedIn/ZoomInfo（Yann Boquillod 头衔）、aifortheplanet.org 与 Startup Grind 北京（创始人履历）、Air Sensors International Conference 2023、IQAir 官方数据校准文档（AI/ML 云校准、卫星反演）、AirVisual Deep Machine Learning 技术文章、Free APK Archive（App 2015-11 上架佐证）、Google Play 版本历史（最后大版本更新 2024-10）、RocketReach/Tracxn/Growjo（仅作数据噪音存证）、The Org（软件开发团队名单）、领英中国/ZoomInfo（Jean Canazzi、Lea David、Ardit Dine、Nikolai Quintos）、IQAir 官方招聘页（Ueli Bichsel、Web 应用开发团队描述）、Ship24 官网与 Tracxn/Company Check（Yann Boquillod 现任去向）、French Tech Taiwan 活动资料与 Dragons' Chamber（2025）。影响力与获客补充来源（2026-09-20 追加）：Similarweb（iqair.com 全量指标与受众画像）、Google Play/App Store（下载量与评分）、Free APK Archive（iOS 7.4.4）、Filterbuy（“读者最常见的排名来自 IQAir”）、加拿大媒体与社交账号（2026 野火季 according to IQAir 引用实例）、IQAir 中国官网（App 中文页与净化器集成描述）。调研时间：2026 年 9 月（含欧洲 13 语种补搜：意/西/荷/波/瑞典/芬/葡/捷/匈/土/俄/乌/希腊）。*
+*主要资料来源：英文维基百科 IQAir 条目、瑞士 Handelszeitung（2020-02-25）、PR Newswire（2017-09-27 收购公告、2025-09-08 Atem Earth 发布）、Indiegogo AirVisual Node 众筹页、aifortheplanet.org（Yann Boquillod 履历）、企查查/天眼查/爱企查工商年报（91110105MA004WEY30）、pappers.ch 瑞士商业登记（CHE-108.429.258）、德国商业登记（HRB 730962/HRB 752171）、Bizapedia（加州 IQAir North America, Inc.）、Revelio Labs 员工数据、Businesscoot/FIMEA（法国市场）、《2025 世界空气质量报告》及各国媒体、南方财经/《电器》杂志（中国专访）、双葉メディカル/オカダGAJ（日本渠道）、Live Science/Trusted Reviews 评测。销售侧写补充来源（2026-09-20 追加）：Similarweb（iqair.com 流量与国别分布）、亚马逊美/日站评论量、RocketReach/Growjo/AllBiz（营收估计）、Companies House（SWISS IQAIR GROUP HOLDINGS LIMITED 09222089）、加州企业登记（1991-11-26）、Google Play（AirVisual 下载量）、企查查招投标记录、百度百科（累计客户口径、前总代理睿博美佳）、中关村在线（直营十周年、进博会珐琅臻彩专访）、印度空净市场报告。团队与研发路径补充来源（2026-09-20 追加）：LinkedIn/ZoomInfo（Yann Boquillod 头衔）、aifortheplanet.org 与 Startup Grind 北京（创始人履历）、Air Sensors International Conference 2023、IQAir 官方数据校准文档（AI/ML 云校准、卫星反演）、AirVisual Deep Machine Learning 技术文章、Free APK Archive（App 2015-11 上架佐证）、Google Play 版本历史（最后大版本更新 2024-10）、RocketReach/Tracxn/Growjo（仅作数据噪音存证）、The Org（软件开发团队名单）、领英中国/ZoomInfo（Jean Canazzi、Lea David、Ardit Dine、Nikolai Quintos）、IQAir 官方招聘页（Ueli Bichsel、Web 应用开发团队描述）、Ship24 官网与 Tracxn/Company Check（Yann Boquillod 现任去向）、French Tech Taiwan 活动资料与 Dragons' Chamber（2025）。影响力与获客补充来源（2026-09-20 追加）：Similarweb（iqair.com 全量指标与受众画像）、Google Play/App Store（下载量与评分）、Free APK Archive（iOS 7.4.4）、Filterbuy（“读者最常见的排名来自 IQAir”）、加拿大媒体与社交账号（2026 野火季 according to IQAir 引用实例）、IQAir 中国官网（App 中文页与净化器集成描述）。竞品补充来源（2026-09-20 追加）：CTech/American Technion Society（Google 收购 BreezoMeter 约 2–2.25 亿美元）、Google Maps Platform 环境API文档、PRNewswire/Mergr（AccuWeather 收购 Plume Labs 2022-01）、aqicn.org 官方自述（非营利、50 万站）、RocketReach（PurpleAir 规模）、VCBacked/Tracxn/LATKA（Airly 融资与 ARR）、Tracxn/Inc42（Ambee 融资）、OpenAQ 官网、Similarweb 竞品榜（iqair.com 头号竞品为 aqicn.org）。调研时间：2026 年 9 月（含欧洲 13 语种补搜：意/西/荷/波/瑞典/芬/葡/捷/匈/土/俄/乌/希腊）。*
